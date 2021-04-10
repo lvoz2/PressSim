@@ -1,3 +1,6 @@
+function load() {
+	initiateVariables()
+}
 function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) >= money) {
 		hands = hands + handsToBuy;
@@ -6,3 +9,4 @@ function buyHands(handsToBuy) {
 		alert("You do not have enough money to buy that many hands");
 	}
 }
+load()
