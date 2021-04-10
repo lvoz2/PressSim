@@ -1,5 +1,5 @@
 function load() {
-	initiateVariables()
+	
 }
 function gainPsi(psiToIncreaseBy) {
 	psi = psi + psiToIncreaseBy;
