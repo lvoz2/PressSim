@@ -1,6 +1,10 @@
 function load() {
 	initiateVariables()
 }
+function gainPsi(psiToIncreaseBy) {
+	psi = psi + psiToIncreaseBy;
+	refresh()
+}
 function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) >= money) {
 		hands = hands + handsToBuy;
@@ -8,5 +12,9 @@ function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) < money) {
 		alert("You do not have enough money to buy that many hands");
 	}
+	refresh()
+}
+refresh() {
+	
 }
 load()
