@@ -1,4 +1,4 @@
-buyHands(handsToBuy) {
+function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) >= money) {
 		hands = hands + handsToBuy;
 	}
