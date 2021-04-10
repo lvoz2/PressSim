@@ -1,4 +1,4 @@
-navUl {
+nav-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,11 +6,11 @@ navUl {
   background-color: #333;
 }
 
-navLi {
+nav-li {
   float: left;
 }
 
-navLiA {
+nav-li-a {
   display: block;
   color: white;
   text-align: center;
@@ -18,6 +18,6 @@ navLiA {
   text-decoration: none;
 }
 
-navLiA:hover {
+nav-li-a:hover {
   background-color: #111;
 }
