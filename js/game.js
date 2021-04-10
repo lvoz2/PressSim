@@ -14,7 +14,7 @@ function buyHands(handsToBuy) {
 	}
 	refresh()
 }
-refresh() {
+function refresh() {
 	
 }
 load()
