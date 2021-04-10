@@ -15,6 +15,8 @@ function buyHands(handsToBuy) {
 	refresh()
 }
 function refresh() {
-	
+	psipersec = hands * handMultiplier;
+	psiValue.innerHTML = psi;
+	psiPerSec.innerHTML = psipersec;
 }
 load()
