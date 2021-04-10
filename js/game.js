@@ -10,7 +10,7 @@ function buyHands(handsToBuy) {
 		hands = hands + handsToBuy;
 	}
 	if ((handsToBuy * pricePerHand) > money) {
-		alert("You do not have enough money to buy that many hands");
+		location.replace("https://lvoz2.github.io/PressSim/#popup1")
 	}
 	refresh()
 }
