@@ -70,3 +70,9 @@
   max-height: 30%;
   overflow: auto;
 }
+.psicontrols {
+	display: inline;
+}
+.psicontrolsdetails {
+	text-align: center;
+}
