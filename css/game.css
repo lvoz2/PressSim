@@ -71,8 +71,8 @@
   overflow: auto;
 }
 .psicontrols {
-	display: inline;
 }
 .psicontrolsdetails {
 	text-align: center;
+	display: inline;
 }
