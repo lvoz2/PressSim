@@ -11,7 +11,7 @@ function buyHands(handsToBuy) {
 		hands = hands + handsToBuy;
 	}
 	if ((handsToBuy * pricePerHand) > money) {
-		location.replace("https://lvoz2.github.io/PressSim/#popup1")
+		functionAlert()
 	}
 	refresh()
 }
@@ -19,5 +19,14 @@ function refresh() {
 	psipersec = hands * handMultiplier;
 	psiValue.innerHTML = psi;
 	psiPerSec.innerHTML = psipersec;
+}
+function functionAlert(msg, myYes) {
+	var confirmBox = $("#confirm");
+	confirmBox.find(".message").text(msg);
+	confirmBox.find(".yes").unbind().click(function() {
+		confirmBox.hide();
+	});
+	confirmBox.find(".yes").click(myYes);
+	confirmBox.show();
 }
 load()
