@@ -79,3 +79,11 @@
 .psicontrolsdetails {
 	display: inline;
 }
+.tab {
+	visibility: hidden;
+	opacity: 0;
+}
+.tab:target {
+	visibility: visible;
+	opacity: 1;
+}
