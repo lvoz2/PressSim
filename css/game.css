@@ -36,13 +36,8 @@
 	position: relative;
 }
 #confirm button {
- 	background-color: #48E5DA;
 	display: inline-block;
-	border-radius: 5px;
-	border: 1px solid #aaa;
-	padding: 5px;
 	text-align: center;
-	width: 80px;
  	cursor: pointer;
 }
 #confirm .message {
