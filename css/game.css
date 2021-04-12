@@ -47,9 +47,9 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin: 0;
 }
 .psicontrolsdetails {
-	display: inline;
 }
 .tab {
 	visibility: hidden;
