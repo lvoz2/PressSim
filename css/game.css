@@ -51,6 +51,24 @@
 .psicontrolsdetails {
 	margin: 0;
 }
+.researchcontrols {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.researchcontrolsdetails {
+	margin: 0;
+}
+.marketcontrols {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.marketcontrolsdetails {
+	margin: 0;
+}
 .tab {
 	visibility: hidden;
 	opacity: 0;
