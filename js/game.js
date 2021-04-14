@@ -7,23 +7,23 @@ function gainPsi(psiToIncreaseBy) {
 	refresh()
 }
 function gainResearch(researchpointsToIncreaseBy) {
+	if (psi < (researchpointsToIncreaseBy * researchpointcost)) {
+		functionAlert()
+	}
 	if (psi >= (researchpointsToIncreaseBy * researchpointcost)) {
 		researchpoints = researchpoints + researchpointsToIncreaseBy;
 		psi = psi - (researchpointsToIncreaseBy * researchpointcost);
 		
 	}
-	if (psi < (researchpointsToIncreaseBy * researchpointcost)) {
-		functionAlert()
-	}
 	refresh()
 }
 function gainCoins(coinsToIncreaseBy) {
+	if (researchpoints < (coinsToIncreaseBy * moneycost)) {
+		functionAlert()
+	}
 	if (researchpoints >= (coinsToIncreaseBy * moneycost)) {
 		money = money + researchpointsToIncreaseBy;
 		researchpoints = researchpoints - (coinsToIncreaseBy * moneycost);
-	}
-	if (researchpoints < (coinsToIncreaseBy * moneycost)) {
-		functionAlert()
 	}
 	refresh()
 }
