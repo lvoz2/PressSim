@@ -5,6 +5,9 @@ window.psi = 0;
 window.hands = 0;
 window.psipersec = 0;
 window.handMultiplier = 1;
+window.researchpointcost = 10;
+window.researchpoints = 0;
+window.moneycost = 1;
 
 //Element Variables
 window.psiValue = document.getElementById("psiValue");
