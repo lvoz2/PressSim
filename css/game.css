@@ -54,8 +54,10 @@
 .tab {
 	visibility: hidden;
 	opacity: 0;
+	display: none;
 }
 .tab:target {
 	visibility: visible;
 	opacity: 1;
+	display: block;
 }
