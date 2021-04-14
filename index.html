@@ -10,13 +10,14 @@
 			<ul class="nav-ul">
 				<li class="nav-li"><a class="nav-li-a" href=".#pressure_creation">Pressure Creation</a></li>
 				<li class="nav-li"><a class="nav-li-a" href=".#research">Research</a></li>
+				<li class="nav-li"><a class="nav-li-a" href=".#market">Market</a></li>
 				<li class="nav-li"><a class="nav-li-a" href=".#item_upgrades">Item Upgrades</a></li>
 				<li class="nav-li"><a class="nav-li-a" href=".#table_upgrades">Table Upgrades</a></li>
 			</ul>
 		</div>
 		<div id="confirm">
 			<div class="message">Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.</div>
-			<button class="yes">&times;</button>
+			<p class="yes">&times;</p>
 		</div>
 		<div class="main">
 			<div id="pressure_creation" class="tab">
@@ -33,6 +34,18 @@
 				</div>
 			</div>
 			<div id="research" class="tab">
+				<div class="researchcontrols">
+					<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
+					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
+					<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="researchcontrolsdetails">Gain one research pont. Cost: 10 psi.</button>
+				</div>
+			</div>
+			<div id="market" class="tab">
+				<div class="marketcontrols">
+					<p style="font-size:25px; font-weight:bold;" class="marketcontrolsdetails"><span id="coinsValue"></span> coins</p>
+					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="marketcontrolsdetails"><span id="coinsPerSec"></span> coins/sec</p>
+					<button id="gainOneCoin" onclick="gainCoins(1)" class="marketcontrolsdetails">Gain one coin. Cost: 1 research point.</button>
+				</div>
 			</div>
 			<div id="item_upgrades" class="tab">
 			</div>
