@@ -6,6 +6,24 @@ function gainPsi(psiToIncreaseBy) {
 	psi = psi + psiToIncreaseBy;
 	refresh()
 }
+function gainResearch(researchpointsToIncreaseBy) {
+	if (psi >= researchpointcost) {
+		researchpoints = researchpoints + researchpointsToIncreaseBy;
+	}
+	if (psi < researchpointcost) {
+		functionAlert()
+	}
+	refresh()
+}
+function gainCoins(coinsToIncreaseBy) {
+	if (researchpoints >= moneycost) {
+		money = money + researchpointsToIncreaseBy;
+	}
+	if (researchpoints < moneycost) {
+		functionAlert()
+	}
+	refresh()
+}
 function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) <= money) {
 		hands = hands + handsToBuy;
