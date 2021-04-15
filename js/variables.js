@@ -8,6 +8,10 @@ window.handMultiplier = 1;
 window.researchpointcost = 10;
 window.researchpoints = 0;
 window.moneycost = 1;
+window.chemistrykit = 0;
+window.chemistrykitMultiplier = 1;
+window.salesperson = 0;
+window.salespersonMultiplier = 1;
 
 //Element Variables
 window.psiValue = document.getElementById("psiValue");
