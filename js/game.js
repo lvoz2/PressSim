@@ -40,6 +40,12 @@ function refresh() {
 	psipersec = hands * handMultiplier;
 	psiValue.innerHTML = psi;
 	psiPerSec.innerHTML = psipersec;
+	researchpersec = chemistrykit * chemistrykitMultiplier
+	researchValue.innerHTML = researchpoints;
+	researchPerSec.innerHTML = researchpersec;
+	coinspersec = salesperson * salespersonMultiplier
+	coinsValue.innerHTML = money;
+	coinsPerSec.innerHTML = coinspersec;
 }
 function functionAlert(msg, myYes) {
 	var confirmBox = $("#confirm");
