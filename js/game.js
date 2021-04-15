@@ -22,7 +22,7 @@ function gainCoins(coinsToIncreaseBy) {
 		functionAlert()
 	}
 	if (researchpoints >= (coinsToIncreaseBy * moneycost)) {
-		money = money + researchpointsToIncreaseBy;
+		money = money + coinsToIncreaseBy;
 		researchpoints = researchpoints - (coinsToIncreaseBy * moneycost);
 	}
 	refresh()
