@@ -80,8 +80,9 @@
 	display: block;
 }
 * {
-       font-family: sans-serif;
+        font-family: sans-serif;
         position: relative;
+        left: 8px;
 }
 button {
         border-radius: 10px;
