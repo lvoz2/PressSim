@@ -81,6 +81,7 @@
 }
 * {
        font-family: sans-serif;
+        position: relative;
 }
 button {
         border-radius: 10px;
