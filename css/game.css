@@ -79,3 +79,9 @@
 	opacity: 1;
 	display: block;
 }
+* {
+       font-family: sans-serif;
+}
+button {
+        border-radius: 10px;
+}
