@@ -82,9 +82,7 @@
 * {
         font-family: sans-serif;
         position: relative;
-        left: -1em;
-        top: -1em;
-        right: -1em;
+        margin: 0;
 }
 button {
         border-radius: 10px;
