@@ -3,7 +3,7 @@ function load() {
 	loadSave()
 }
 function loadSave() {
-	var save = localStorage.getItem('save');
+	save = localStorage.getItem('save');
 	save = atob(save);
 	save = parseInt(save);
 	if (save == 2) {
