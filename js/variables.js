@@ -12,6 +12,7 @@ window.chemistrykit = 0;
 window.chemistrykitMultiplier = 1;
 window.salesperson = 0;
 window.salespersonMultiplier = 1;
+window.save = 0;
 
 //Element Variables
 window.psiValue = document.getElementById("psiValue");
