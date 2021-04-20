@@ -4,6 +4,7 @@ function load() {
 }
 function loadSave() {
 	var save = localStorage.getItem('save');
+	save = atob(save);
 	save = parseInt(save);
 	if (save == 2) {
 		var pricePerHandfile = localStorage.getItem('pricePerHand');
