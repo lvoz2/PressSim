@@ -47,7 +47,7 @@ function loadSave() {
 		salesperson = parseInt(salespersonfile); 
 		salespersonMultiplier = parseInt(salespersonMultiplierfile);
 	}
-	if (save!= 2) {
+	if (save != 2) {
 	}
 	refresh()
 }
