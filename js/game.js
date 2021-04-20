@@ -12,7 +12,7 @@ function loadSave() {
 		var psifile = localStorage.getItem('psi'); 
 		var handsfile = localStorage.getItem('hands'); 
 		var psipersecfile = localStorage.getItem('psipersec');
-		var handMultiplierfile = localStorage.getItem('handMultipler'); 
+		var handMultiplierfile = localStorage.getItem('handMultiplier'); 
 		var researchpointcostfile = localStorage.getItem('researchpointcost'); 
 		var researchpointsfile = localStorage.getItem('researchpoints'); 
 		var moneycostfile = localStorage.getItem('moneycost'); 
