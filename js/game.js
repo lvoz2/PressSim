@@ -97,6 +97,7 @@ function refresh() {
 	coinspersec = salesperson * salespersonMultiplier
 	coinsValue.innerHTML = money;
 	coinsPerSec.innerHTML = coinspersec;
+	updateSaveFile()
 }
 function functionAlert(msg, myYes) {
 	var confirmBox = $("#confirm");
