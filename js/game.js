@@ -81,9 +81,7 @@ function buyHands(handsToBuy) {
 		hands = hands + handsToBuy;
 	}
 	if ((handsToBuy * pricePerHand) > money) {
-		alertify.alert("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.", function(){
-  			alertify.message('×');
-  		});
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
 	refresh()
 }
