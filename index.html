@@ -31,14 +31,14 @@
 						<h3>Hands</h3>
 						<p>Amount: <div id="handAmount"></div>
 						<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
-						<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 4 coins<div id="handSingleCost"></div></button>
+						<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: <div id="handSingleCost">4</div> coins</button>
 					</div>
 					<br/>
 					<div class="presscontrols">
 						<h4>Industrial Press</h4>
 						<p>Amount</p>
-						<p>Industrial Press are things that can Press something creating preassure.+10psi/sec</p>
-						<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: 10 coins<div id="Industrial PressSingleCost"></div></button>
+						<p>Industrial Presses are things that can automatically apply pressure to an item using hydraulics. +10 psi/sec</p>
+						<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: <div id="pressSingleCost">10</div> coins</button>
 					</div>
 				</div>
 			</div>
@@ -48,11 +48,11 @@
 					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
 					<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="researchcontrolsdetails">Gain one research point. Cost: 10 psi.</button>
 				</div>
-				<div class="handscontrols">
+				<div class="kitcontrols">
 					<h3>Chemistry Kits</h3>
-					<p>Amount: <div id="handAmount"></div>
-					<p>Chemistry kits are used learn about elements and using the element to get knew substances.</p> 
-					<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 5 coins<div id="handSingleCost"></div></button>
+					<p>Amount: <div id="kitsAmount"></div>
+					<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
+					<button class="button" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <div id="kitSingleCost">5 coins, 10 psi/sec</div></button>
 				</div>
 			</div>
 			<div id="market" class="tab">
@@ -61,16 +61,14 @@
 					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="marketcontrolsdetails"><span id="coinsPerSec"></span> coins/sec</p>
 					<button id="gainOneCoin" onclick="gainCoins(1)" class="marketcontrolsdetails">Gain one coin. Cost: 1 research point.</button>
 				</div>
-				<div class="handscontrols">
+				<div class="salescontrols">
 					<h3>Salespersons</h3>
-					<p>Amount: <div id="handAmount"></div>
-					<p>Slaespersons are used to create the psi then use the psi creating double psi than a hand. +2psi/sec.</p> 
-					<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 8 coins<div id="handSingleCost"></div></button>
+					<p>Amount: <div id="salesAmount"></div>
+					<p>Salespersons are used to advertise your company. This will increase the amount of people who want the knowledge you gain from your experiments. +1 coins/sec.</p> 
+					<button class="button" id="salesBuy" onclick="buySales(1)">Hire one Salesperson. Cost: <div id="salesSingleCost">8 coins, 1 research point/sec</div></button>
 				</div>
 			</div>
 			<div id="item_upgrades" class="tab"
-			     <p>Hand Upgrade is going to double the amount of psi from hands</p>
-			<button class="button button1" id= "Buy Hand Upgrade" onclick="Buy Hand Upgrade">Buy Hand Upgrade. Cost: 50 coins<div id="HandUpgradeSingleCost"></div></button>
 			</div>
 			<div id="table_upgrades" class="tab">
 			</div>
