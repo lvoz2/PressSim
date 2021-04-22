@@ -78,14 +78,16 @@ function gainCoins(coinsToIncreaseBy) {
 	refresh()
 }
 function buyHands(handsToBuy) {
+	if ((handsToBuy * pricePerHand) > money) {
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
+	}
 	if ((handsToBuy * pricePerHand) <= money) {
 		hands = hands + handsToBuy;
 		money = money - (handsToBuy * pricePerHand);
 	}
-	if ((handsToBuy * pricePerHand) > money) {
-		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
-	}
 	refresh()
+}
+function purgeSave() {
 }
 function refresh() {
 	psipersec = hands * handMultiplier;
