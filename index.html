@@ -48,12 +48,24 @@
 					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
 					<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="researchcontrolsdetails">Gain one research point. Cost: 10 psi.</button>
 				</div>
+				<div class="handscontrols">
+					<h3>Chemistry Kits</h3>
+					<p>Amount: <div id="handAmount"></div>
+					<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
+					<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 5 coins<div id="handSingleCost"></div></button>
+				</div>
 			</div>
 			<div id="market" class="tab">
 				<div class="marketcontrols">
 					<p style="font-size:25px; font-weight:bold;" class="marketcontrolsdetails"><span id="coinsValue"></span> coins</p>
 					<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="marketcontrolsdetails"><span id="coinsPerSec"></span> coins/sec</p>
 					<button id="gainOneCoin" onclick="gainCoins(1)" class="marketcontrolsdetails">Gain one coin. Cost: 1 research point.</button>
+				</div>
+				<div class="handscontrols">
+					<h3>Salespersons</h3>
+					<p>Amount: <div id="handAmount"></div>
+					<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
+					<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 8 coins<div id="handSingleCost"></div></button>
 				</div>
 			</div>
 			<div id="item_upgrades" class="tab">
