@@ -136,3 +136,4 @@ function updateSaveFile() {
 	savetoLS('save', 2);
 }
 load()
+purgeSave()
