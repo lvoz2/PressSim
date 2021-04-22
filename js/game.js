@@ -1,5 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
+	setInterval(update, 1000);
 	loadSave()
 }
 function loadSave() {
@@ -57,7 +58,7 @@ function gainPsi(psiToIncreaseBy) {
 }
 function gainResearch(researchpointsToIncreaseBy) {
 	if (psi < (researchpointsToIncreaseBy * researchpointcost)) {
-		functionAlert()
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
 	if (psi >= (researchpointsToIncreaseBy * researchpointcost)) {
 		researchpoints = researchpoints + researchpointsToIncreaseBy;
@@ -68,7 +69,7 @@ function gainResearch(researchpointsToIncreaseBy) {
 }
 function gainCoins(coinsToIncreaseBy) {
 	if (researchpoints < (coinsToIncreaseBy * moneycost)) {
-		functionAlert()
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
 	if (researchpoints >= (coinsToIncreaseBy * moneycost)) {
 		money = money + coinsToIncreaseBy;
@@ -79,6 +80,7 @@ function gainCoins(coinsToIncreaseBy) {
 function buyHands(handsToBuy) {
 	if ((handsToBuy * pricePerHand) <= money) {
 		hands = hands + handsToBuy;
+		money = money - (handsToBuy * pricePerHand);
 	}
 	if ((handsToBuy * pricePerHand) > money) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
@@ -96,6 +98,9 @@ function refresh() {
 	coinsValue.innerHTML = money;
 	coinsPerSec.innerHTML = coinspersec;
 	updateSaveFile()
+}
+function update() {
+	gainPsi(psipersec)
 }
 function functionAlert(msg, myYes) {
 	var confirmBox = $("#confirm");
