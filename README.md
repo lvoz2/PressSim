@@ -3,4 +3,6 @@ This is a game that tries to simulate the processes that change materials into o
 
 Created and Managed by lvoz2
 
+Contributer's: Diamond's, Artinater11, K9R
+
 [Latest Version](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
