@@ -27,15 +27,19 @@
 					<button id="gainOnePsi" onclick="gainPsi(1)" class="psicontrolsdetails">Gain one psi.</button>
 				</div>
 				<div>
-					<h3>Hands</h3>
-					<p>Amount: <div id="handAmount"></div>
-					<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
-					<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 10 coins<div id="handSingleCost"></div></button>
-					<h4>Compressor</h4>
-					<p>Amount</p>
-					<p>Compressors are things that can compresing something creating preassure.+10psi/sec</p>
-					<button class="button button2" id="CompressorBuy" onclick="buyCompressor(1)">Buy one Compressor. Cost: 50 coins<div id="CompressorSingleCost"></div></button>
-	
+					<div class="handscontrols">
+						<h3>Hands</h3>
+						<p>Amount: <div id="handAmount"></div>
+						<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
+						<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: 10 coins<div id="handSingleCost"></div></button>
+					</div>
+					<br/>
+					<div class="presscontrols">
+						<h4>Industrial Press</h4>
+						<p>Amount</p>
+						<p>Compressors are things that can compresing something creating preassure.+10psi/sec</p>
+						<button class="button button2" id="CompressorBuy" onclick="buyCompressor(1)">Buy one Compressor. Cost: 50 coins<div id="CompressorSingleCost"></div></button>
+					</div>
 				</div>
 			</div>
 			<div id="research" class="tab">
