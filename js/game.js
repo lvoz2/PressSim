@@ -127,3 +127,14 @@ function updateSaveFile() {
 	savetoLS('save', 2);
 }
 purgeSave()
+if(!alertify.errorAlert){
+  //define a new errorAlert base on alert
+  alertify.dialog('errorAlert',function factory(){
+    return{
+            build:function(){
+                var errorHeader = '<h2>PressSim</h2>';
+                this.setHeader(errorHeader);
+            }
+        };
+    },true,'alert');
+}
