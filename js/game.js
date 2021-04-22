@@ -135,5 +135,4 @@ function updateSaveFile() {
 	savetoLS('salespersonMultiplier', salespersonMultiplier);
 	savetoLS('save', 2);
 }
-load()
 purgeSave()
