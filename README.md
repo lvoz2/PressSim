@@ -3,4 +3,4 @@ This is a game that tries to simulate the processes that change materials into o
 
 Created and Managed by lvoz2
 
-[Latest Version](https://lvoz2.github.io/PressSim/)
+[Latest Version](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
