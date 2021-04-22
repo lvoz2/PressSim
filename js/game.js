@@ -88,6 +88,8 @@ function buyHands(handsToBuy) {
 	refresh()
 }
 function purgeSave() {
+	localStorage.clear()
+	load()
 }
 function refresh() {
 	psipersec = hands * handMultiplier;
