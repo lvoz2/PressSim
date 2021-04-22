@@ -33,14 +33,14 @@
 						<h3>Hands</h3>
 						<p>Amount: <div id="handAmount"></div>
 						<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
-						<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: <div id="handSingleCost">4</div> coins</button>
+						<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: <span id="handSingleCost">4</span> coins</button>
 					</div>
 					<br/>
 					<div class="presscontrols">
 						<h4>Industrial Press</h4>
 						<p>Amount</p>
 						<p>Industrial Presses are things that can automatically apply pressure to an item using hydraulics. +10 psi/sec</p>
-						<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: <div id="pressSingleCost">10</div> coins</button>
+						<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: <span id="pressSingleCost">10</span> coins</button>
 					</div>
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 					<h3>Chemistry Kits</h3>
 					<p>Amount: <div id="kitsAmount"></div>
 					<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
-					<button class="button" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <div id="kitSingleCost">5 coins, 10 psi/sec</div></button>
+					<button class="button" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, 10 psi/sec</span></button>
 				</div>
 			</div>
 			<div id="market" class="tab">
@@ -67,7 +67,7 @@
 					<h3>Salespersons</h3>
 					<p>Amount: <div id="salesAmount"></div>
 					<p>Salespersons are used to advertise your company. This will increase the amount of people who want the knowledge you gain from your experiments. +1 coins/sec.</p> 
-					<button class="button" id="salesBuy" onclick="buySales(1)">Hire one Salesperson. Cost: <div id="salesSingleCost">8 coins, 1 research point/sec</div></button>
+					<button class="button" id="salesBuy" onclick="buySales(1)">Hire one Salesperson. Cost: <span id="salesSingleCost">8 coins, 1 research point/sec</span></button>
 				</div>
 			</div>
 			<div id="item_upgrades" class="tab"
