@@ -100,7 +100,7 @@ function buySales(SalespersonToBuy) {
 	if ((SalespersonToBuy * pricePerSalesperson) > money) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
-	if ((SalespersonToBuy * SalespersonPerKit) <= money) {
+	if ((SalespersonToBuy * pricePerSalesperson) <= money) {
 		Salesperson = Salesperson + SalespersonToBuy;
 		money = money - (SalespersonToBuy * SalespersonPerKit);
 	}
