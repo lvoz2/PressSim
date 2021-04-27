@@ -149,3 +149,7 @@ if(!alertify.errorAlert){
         };
     },true,'alert');
 }
+var angGame = angular.module('game', []);
+angGame.controller('gameCtrl', function($scope) {
+    $scope.psi = psi;
+});
