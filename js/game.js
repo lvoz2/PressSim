@@ -119,7 +119,7 @@ function refresh() {
 }
 function update() {
 	gainPsi(psipersec)
-	gainResearch(researchpointsToIncreaseBy)
+	gainResearch(researchpersec)
 }
 function savetoLS(key, value) {
 	var lssave = btoa(value);
