@@ -4,6 +4,7 @@ window.money = 0;
 window.psi = 0;
 window.hands = 0;
 window.psipersec = 0;
+window.researchpersec = 0;
 window.handMultiplier = 1;
 window.researchpointcost = 10;
 window.researchpoints = 0;
