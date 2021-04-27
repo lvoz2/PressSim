@@ -59,7 +59,7 @@ function gainPsi(psiToIncreaseBy) {
 	psi = psi + psiToIncreaseBy;
 	refresh()
 }
-function gainResearch() {
+function gainResearch(researchpointsToIncreaseBy) {
 	if (psi < (researchpointsToIncreaseBy * researchpointcost)) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
