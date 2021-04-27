@@ -9,10 +9,10 @@
 		<link rel="stylesheet" href="./alertifyjs/css/alertify.min.css"/>
 		<link rel="stylesheet" href="./alertifyjs/css/themes/default.min.css"/>
 		<script src="./alertifyjs/alertify.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src=".jquery-3.6.0.min.js"></script>
 	</head>
 	<body>
-		<div ng-app="game">
+		<div>
 			<div>
 				<ul class="nav-ul">
 					<li class="nav-li"><a class="nav-li-a" href=".#pressure_creation">Pressure Creation</a></li>
@@ -25,7 +25,7 @@
 			<div class="main">
 				<div id="pressure_creation" class="tab">
 					<div class="psicontrols">
-						<p ng-controller="gameCtrl" style="font-size:25px; font-weight:bold;" class="psicontrolsdetails"><span>{{game}}</span>&nbsp;psi</p>
+						<p style="font-size:25px; font-weight:bold;" class="psicontrolsdetails"><span id="psiValue"></span>&nbsp;psi</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="psicontrolsdetails"><span id="psiPerSec"></span>&nbsp;psi/sec</p>
 						<button id="gainOnePsi" onclick="gainPsi(1)" class="psicontrolsdetails">Gain one psi.</button>
 					</div>
