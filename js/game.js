@@ -131,7 +131,7 @@ function refresh() {
 function update() {
 	gainPsi(psipersec / 1000)
 	gainResearch(researchpersec)
-	gainCoins(cooinspersec)
+	gainCoins(coinspersec)
 }
 function savetoLS(key, value) {
 	var lssave = btoa(value);
