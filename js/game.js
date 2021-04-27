@@ -109,7 +109,6 @@ function refresh() {
 	researchpersec = kits * kitMultiplier;
 	psiValue.innerHTML = psi;
 	psiPerSec.innerHTML = psipersec;
-	researchpersec = chemistrykit * chemistrykitMultiplier
 	researchValue.innerHTML = researchpoints;
 	researchPerSec.innerHTML = researchpersec;
 	coinspersec = salesperson * salespersonMultiplier
