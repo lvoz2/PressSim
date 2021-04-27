@@ -87,6 +87,16 @@ function buyHands(handsToBuy) {
 	}
 	refresh()
 }
+function buyKits(kitsToBuy) {
+	if ((kitsToBuy * pricePerKit) > money) {
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
+	}
+	if ((kitsToBuy * pricePerKit) <= money) {
+		kits += kitsToBuy;
+		money -= (kitsToBuy * pricePerKit);
+	}
+	refresh()
+}
 function purgeSave() {
 	localStorage.clear()
 	load()
@@ -126,7 +136,7 @@ function updateSaveFile() {
 	savetoLS('salespersonMultiplier', salespersonMultiplier);
 	savetoLS('save', 2);
 }
-purgeSave()
+load()
 if(!alertify.errorAlert){
   //define a new errorAlert base on alert
   alertify.dialog('errorAlert',function factory(){
