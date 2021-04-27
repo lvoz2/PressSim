@@ -59,7 +59,7 @@ function gainPsi(psiToIncreaseBy) {
 	psi = psi + psiToIncreaseBy;
 	refresh()
 }
-function gainResearch(researchpointsToIncreaseBy) {
+function gainResearch() {
 	if (psi < (researchpointsToIncreaseBy * researchpointcost)) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
@@ -106,6 +106,7 @@ function purgeSave() {
 }
 function refresh() {
 	psipersec = hands * handMultiplier;
+	researchpersec = kits * kitMultiplier;
 	psiValue.innerHTML = psi;
 	psiPerSec.innerHTML = psipersec;
 	researchpersec = chemistrykit * chemistrykitMultiplier
@@ -118,7 +119,7 @@ function refresh() {
 }
 function update() {
 	gainPsi(psipersec)
-	researchpoints = researchpoints + researchpersec 
+	gainResearch(researchpointsToIncreaseBy)
 }
 function savetoLS(key, value) {
 	var lssave = btoa(value);
