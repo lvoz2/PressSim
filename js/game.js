@@ -1,6 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
-	setInterval(update, 1000);
+	setInterval(update, 1);
 	loadSave()
 }
 function loadSave() {
@@ -119,7 +119,7 @@ function purgeSave() {
 function refresh() {
 	psipersec = hands * handMultiplier;
 	researchpersec = kits * kitMultiplier;
-	psiValue.innerHTML = psi;
+	psiValue.innerHTML = Math.floor(psi);
 	psiPerSec.innerHTML = psipersec;
 	researchValue.innerHTML = researchpoints;
 	researchPerSec.innerHTML = researchpersec;
@@ -129,9 +129,9 @@ function refresh() {
 	updateSaveFile()
 }
 function update() {
-	gainPsi(psipersec)
+	gainPsi(psipersec / 1000)
 	gainResearch(researchpersec)
-	money = money + coinspersec 
+	gainCoins(cooinspersec)
 }
 function savetoLS(key, value) {
 	var lssave = btoa(value);
