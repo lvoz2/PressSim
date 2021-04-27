@@ -19,8 +19,6 @@ function loadSave() {
 		var researchpointcostfile = localStorage.getItem('researchpointcost'); 
 		var researchpointsfile = localStorage.getItem('researchpoints'); 
 		var moneycostfile = localStorage.getItem('moneycost'); 
-		var chemistrykitfile = localStorage.getItem('chemistrykit'); 
-		var chemistrykitMultiplierfile = localStorage.getItem('chemistrykitMultiplier'); 
 		var salespersonfile = localStorage.getItem('salesperson'); 
 		var salespersonMultiplierfile = localStorage.getItem('salespersonMultiplier');
 		pricePerHandfile = atob(pricePerHandfile); 
@@ -34,8 +32,6 @@ function loadSave() {
 		researchpointcostfile = atob(researchpointcostfile); 
 		researchpointsfile = atob(researchpointsfile); 
 		moneycostfile = atob(moneycostfile); 
-		chemistrykitfile = atob(chemistrykitfile); 
-		chemistrykitMultiplierfile = atob(chemistrykitMultiplierfile); 
 		salespersonfile = atob(salespersonfile); 
 		salespersonMultiplierfile = atob(salespersonMultiplierfile);
 		pricePerHand = parseInt(pricePerHandfile); 
@@ -48,8 +44,6 @@ function loadSave() {
 		researchpointcost = parseInt(researchpointcostfile); 
 		researchpoints = parseInt(researchpointsfile); 
 		moneycost = parseInt(moneycostfile); 
-		chemistrykit = parseInt(chemistrykitfile); 
-		chemistrykitMultiplier = parseInt(chemistrykitMultiplierfile); 
 		salesperson = parseInt(salespersonfile); 
 		salespersonMultiplier = parseInt(salespersonMultiplierfile);
 	}
@@ -147,8 +141,6 @@ function updateSaveFile() {
 	savetoLS('researchpointcost', researchpointcost);
 	savetoLS('researchpoints', researchpoints);
 	savetoLS('moneycost', moneycost);
-	savetoLS('chemistrykit', chemistrykit);
-	savetoLS('chemistrykitMultiplier', chemistrykitMultiplier);
 	savetoLS('salesperson', salesperson);
 	savetoLS('salespersonMultiplier', salespersonMultiplier);
 	savetoLS('save', 2);
