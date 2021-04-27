@@ -1,6 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
-	setInterval(update, 1);
+	setInterval(update, 10);
 	loadSave()
 }
 function loadSave() {
@@ -129,7 +129,7 @@ function refresh() {
 	updateSaveFile()
 }
 function update() {
-	gainPsi(psipersec / 1000)
+	gainPsi(psipersec / 100)
 	gainResearch(researchpersec)
 	gainCoins(coinspersec)
 }
