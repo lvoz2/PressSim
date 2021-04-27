@@ -5,4 +5,4 @@ Created and Managed by lvoz2
 
 Contributers: Diamond53, Artinator11, K9R, C0N5OLE
 
-[Latest Version](https://lvoz2.github.io/PressSim/)
+[Latest Version](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
