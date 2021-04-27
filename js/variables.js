@@ -11,6 +11,7 @@ window.researchpoints = 0;
 window.moneycost = 1;
 window.kits = 0;
 window.pricePerKit = 5;
+window.pricePerSalesperson = 5;
 window.pricePerKitSpeedCost = 10;
 window.kitMultiplier = 1;
 window.salesperson = 0;
