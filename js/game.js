@@ -9,6 +9,7 @@ function loadSave() {
 	save = parseInt(save);
 	if (save == 2) {
 		var pricePerHandfile = localStorage.getItem('pricePerHand');
+		var pricePerKitfile = localStorage.getItem('pricePerKit');
 		var moneyfile = localStorage.getItem('money'); 
 		var psifile = localStorage.getItem('psi'); 
 		var handsfile = localStorage.getItem('hands'); 
@@ -22,6 +23,7 @@ function loadSave() {
 		var salespersonfile = localStorage.getItem('salesperson'); 
 		var salespersonMultiplierfile = localStorage.getItem('salespersonMultiplier');
 		pricePerHandfile = atob(pricePerHandfile); 
+		pricePerKitfile = atob(pricePerKitfile); 
 		moneyfile = atob(moneyfile); 
 		psifile = atob(psifile); 
 		handsfile = atob(handsfile); 
@@ -35,6 +37,7 @@ function loadSave() {
 		salespersonfile = atob(salespersonfile); 
 		salespersonMultiplierfile = atob(salespersonMultiplierfile);
 		pricePerHand = parseInt(pricePerHandfile); 
+		priceKitHand = parseInt(pricePerKitfile); 
 		money = parseInt(moneyfile); 
 		psi = parseInt(psifile); 
 		hands = parseInt(handsfile); 
