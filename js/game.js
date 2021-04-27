@@ -92,8 +92,8 @@ function buyKits(kitsToBuy) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
 	if ((kitsToBuy * pricePerKit) <= money) {
-		kits += kitsToBuy;
-		money -= (kitsToBuy * pricePerKit);
+		kits = kits + kitsToBuy;
+		money = money - (kitsToBuy * pricePerKit);
 	}
 	refresh()
 }
