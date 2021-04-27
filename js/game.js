@@ -129,7 +129,7 @@ function refresh() {
 	updateSaveFile()
 }
 function update() {
-	gainPsi(psipersec / 100)
+	gainPsi(psipersec / 1000)
 	gainResearch(researchpersec)
 	gainCoins(coinspersec)
 }
