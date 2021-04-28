@@ -118,17 +118,17 @@ function refresh() {
 	researchpersec = kits * kitMultiplier;
 	psiValue.innerHTML = Math.floor(psi);
 	psiPerSec.innerHTML = psipersec;
-	researchValue.innerHTML = researchpoints;
+	researchValue.innerHTML = Math.floor(researchpoints);
 	researchPerSec.innerHTML = researchpersec;
 	coinspersec = salesperson * salespersonMultiplier
-	coinsValue.innerHTML = money;
+	coinsValue.innerHTML = Math.floor(money);
 	coinsPerSec.innerHTML = coinspersec;
 	updateSaveFile()
 }
 function update() {
 	gainPsi(psipersec / 100)
-	researchpoints = researchpoints + (researchpersec / 100)
-	money = money + (coinspersec / 100)
+	gainResearch(researchpersec / 100)
+	gainCoins(coinspersec / 100)
 }
 function savetoLS(key, value) {
 	var lssave = btoa(value);
