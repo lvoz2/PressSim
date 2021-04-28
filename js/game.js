@@ -10,6 +10,7 @@ function loadSave() {
 	if (save == 2) {
 		var pricePerHandfile = localStorage.getItem('pricePerHand');
 		var pricePerKitfile = localStorage.getItem('pricePerKit');
+		var pricePerAKitfile = localStorage.getItem('pricePerAKit');
 		var pricePerSalespersonfile = localStorage.getItem('pricePerSalesperson');
 		var pricePerSalespersonrpfile = localStorage.getItem('pricePerSalesperson');
 		var moneyfile = localStorage.getItem('money'); 
@@ -28,6 +29,7 @@ function loadSave() {
 		pricePerSalespersonfile = atob(pricePerSalespersonfile);
 		pricePerSalespersonrpfile = atob(pricePerSalespersonrpfile);
 		pricePerKitfile = atob(pricePerKitfile); 
+		pricePerAKitfile = atob(pricePerAKitfile); 
 		moneyfile = atob(moneyfile); 
 		psifile = atob(psifile); 
 		handsfile = atob(handsfile); 
@@ -104,6 +106,17 @@ function buyKits(kitsToBuy) {
 	}
 	refresh()
 }
+
+function buyAKits(aKitsToBuy) {
+	if ((aKitsToBuy * pricePerAKit) > money) {
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
+	}
+	if ((aKitsToBuy * pricePerAKit) <= money) {
+		Akits = Akits + aKitsToBuy;
+		money = money - (aKitsToBuy * pricePerAKit);
+	}
+	refresh()
+}
 function buySales(SalespersonToBuy) {
 	if ((SalespersonToBuy * pricePerSalesperson) > money) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
@@ -121,7 +134,7 @@ function purgeSave() {
 }
 function refresh() {
 	psipersec = hands * handMultiplier;
-	researchpersec = kits * kitMultiplier;
+	researchpersec = kits + (Akits * AkitMultiplier) * kitMultiplier;
 	psiValue.innerHTML = Math.floor(psi);
 	psiPerSec.innerHTML = psipersec;
 	researchValue.innerHTML = Math.floor(researchpoints);
