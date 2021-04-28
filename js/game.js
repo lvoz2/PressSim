@@ -11,7 +11,7 @@ function loadSave() {
 		var pricePerHandfile = localStorage.getItem('pricePerHand');
 		var pricePerKitfile = localStorage.getItem('pricePerKit');
 		var pricePerSalespersonfile = localStorage.getItem('pricePerSalesperson');
-		var pricePerSalespersonrpfile = localStorage.getItem('pricePerSalespersonrp');
+		var pricePerSalespersonrpfile = localStorage.getItem('pricePerSalesperson');
 		var moneyfile = localStorage.getItem('money'); 
 		var psifile = localStorage.getItem('psi'); 
 		var handsfile = localStorage.getItem('hands'); 
