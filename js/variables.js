@@ -27,5 +27,5 @@ window.psiValue = document.getElementById("psiValue");
 window.psiPerSec = document.getElementById("psiPerSec");
 window.researchValue = document.getElementById("researchValue");
 window.researchPerSec = document.getElementById("researchPerSec");
-window.coinsValue = document.getElementById("coinsValue");
+window.coinsValue = document.getElementById("coinsValue"); 
 window.coinsPerSec = document.getElementById("coinsPerSec");
