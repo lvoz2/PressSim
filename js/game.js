@@ -28,7 +28,7 @@ function loadSave() {
 		var kitsMultiplierfile = localStorage.getItem('kitsMultiplier');
 		pricePerHandfile = atob(pricePerHandfile); 
 		pricePerSalespersonfile = atob(pricePerSalespersonfile);
-		pricePerManagerfile = atob(pricePerSalespersonfile);
+		pricePerManagerfile = atob(pricePerManagerfile);
 		pricePerSalespersonrpfile = atob(pricePerSalespersonrpfile);
 		pricePerKitfile = atob(pricePerKitfile); 
 		pricePerAKitfile = atob(pricePerAKitfile); 
