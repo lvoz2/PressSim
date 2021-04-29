@@ -12,6 +12,7 @@ function loadSave() {
 		var pricePerKitfile = localStorage.getItem('pricePerKit');
 		var pricePerAKitfile = localStorage.getItem('pricePerAKit');
 		var pricePerSalespersonfile = localStorage.getItem('pricePerSalesperson');
+		var pricePerManagerfile = localStorage.getItem('pricePerManager');
 		var pricePerSalespersonrpfile = localStorage.getItem('pricePerSalesperson');
 		var moneyfile = localStorage.getItem('money'); 
 		var psifile = localStorage.getItem('psi'); 
@@ -27,6 +28,7 @@ function loadSave() {
 		var kitsMultiplierfile = localStorage.getItem('kitsMultiplier');
 		pricePerHandfile = atob(pricePerHandfile); 
 		pricePerSalespersonfile = atob(pricePerSalespersonfile);
+		pricePerManagerfile = atob(pricePerSalespersonfile);
 		pricePerSalespersonrpfile = atob(pricePerSalespersonrpfile);
 		pricePerKitfile = atob(pricePerKitfile); 
 		pricePerAKitfile = atob(pricePerAKitfile); 
@@ -114,6 +116,18 @@ function buyAKits(aKitsToBuy) {
 	if ((aKitsToBuy * pricePerAKit) <= money) {
 		Akits = Akits + aKitsToBuy;
 		money = money - (aKitsToBuy * pricePerAKit);
+		
+	}
+	refresh()
+}
+function buyManager(managersToBuy) {
+	if ((managersToBuy * pricePerManager) > money) {
+		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
+	}
+	if ((managersToBuy * pricePerManager <= money) {
+		Managers = Managers + managersToBuy;
+		money = money - (managersToBuy * pricePerManager);
+		kits = kits - 5;
 	}
 	refresh()
 }
