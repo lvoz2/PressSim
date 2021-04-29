@@ -51,18 +51,22 @@
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
 						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: 10 psi.</button>
 					</div>
-					<div class="kitcontrols">
-						<h3>Chemistry Kits</h3>
-						<p>Amount: <div id="kitsAmount"></div>
-						<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
-						<button class="button button1" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, 10 psi/sec</span></button>
+					<div class="left-column">
+						<div class="kitcontrols">
+							<h3>Chemistry Kits</h3>
+							<p>Amount: <div id="kitsAmount"></div>
+							<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
+							<button class="button button1" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, 10 psi/sec</span></button>
+						</div>
+						<br/>
+						<div class="akitcontrols">
+							<h3>Advanced Chemistry Kits</h3>
+							<p>Amount: <div id ="akitsAmount"></div>
+							<p>Advanced Chemistry Kits are used to learn more about science exploring into science deeper. +10 reasearch points/sec</p>
+							<button class="button button1" id="AdvancedKitBuy" onclick="buyAKits(1)">Buy one Advanced Chemistry Kits. Cost: <span id="AdvancedKitsSingleCost">10 coins, 20 psi/se</span></button>
+						</div>
 					</div>
-					<br/>
-					<div class="akitcontrols">
-						<h3>Advanced Chemistry Kits</h3>
-						<p>Amount: <div id ="akitsAmount"></div>
-						<p>Advanced Chemistry Kits are used to learn more about science exploring into science deeper. +10 reasearch points/sec</p>
-						<button class="button button1" id="AdvancedKitBuy" onclick="buyAKits(1)">Buy one Advanced Chemistry Kits. Cost: <span id="AdvancedKitsSingleCost">10 coins, 20 psi/se</span></button>
+					<div class="right-column">
 					</div>
 				</div>
 				<div id="market" class="tab">
@@ -102,7 +106,7 @@
 					<button class="button button1" id"MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">100 coins, create Metal/sec</span></button>
 				</div>
 				<div id="table_upgrades" class="tab">
-					<h> C0N5OLE was here </h>
+					<h1> C0N5OLE &amp; lvoz2 was here </h1>
 				</div>
 			</div>
 			<div id="scripts">
