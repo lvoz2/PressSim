@@ -153,7 +153,7 @@ function refresh() {
 	psiPerSec.innerHTML = psipersec;
 	researchValue.innerHTML = Math.floor(researchpoints);
 	researchPerSec.innerHTML = researchpersec;
-	coinspersec = salesperson * salespersonMultiplier
+	coinspersec = salesperson + (Managers * ManagerMultiplier) * salespersonMultiplier;
 	coinsValue.innerHTML = Math.floor(money);
 	coinsPerSec.innerHTML = coinspersec;
 	updateSaveFile()
