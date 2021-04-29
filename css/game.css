@@ -118,6 +118,7 @@ button {
 .left-column {
 	width: 50%;
 	display: inline-block;
+	border-right: 1px solid black;
 	float: left;
 }
 .right-column {
