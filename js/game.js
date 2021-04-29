@@ -1,5 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
+	variables()
 	setInterval(update, 10);
 	loadSave()
 }
