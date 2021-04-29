@@ -190,7 +190,7 @@ if(!alertify.errorAlert){
                 var errorHeader = '<h2>PressSim</h2>';
                 this.setHeader(errorHeader);
             }
-        };
+        }; 
     },true,'alert');
 }
 
