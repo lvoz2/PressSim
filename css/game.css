@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-image: url(css/navbar.png);
+	background-image: url(./navbar.png);
 }
 
 .nav-li {
@@ -114,4 +114,14 @@ button {
 	visibility: hidden;
 	opacity: 0;
 	display: none;
+}
+left-column {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+right-column {
+	width: 50%;
+	display: inline-block;
+	float: right;
 }
