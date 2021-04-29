@@ -115,12 +115,12 @@ button {
 	opacity: 0;
 	display: none;
 }
-left-column {
+.left-column {
 	width: 50%;
 	display: inline-block;
 	float: left;
 }
-right-column {
+.right-column {
 	width: 50%;
 	display: inline-block;
 	float: right;
