@@ -138,7 +138,7 @@ function buySales(SalespersonToBuy) {
 	if ((SalespersonToBuy * pricePerSalesperson) <= money) {
 		salesperson = salesperson + SalespersonToBuy;
 		money = money - (SalespersonToBuy * pricePerSalesperson);
-		researchpersec = (researchpersec - pricePerSalespersonrp);
+		researchpersec = (researchpersec - pricePerSalespersonrp); 
 	}
 	refresh()
 }
