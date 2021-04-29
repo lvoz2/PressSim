@@ -124,7 +124,7 @@ function buyManager(managersToBuy) {
 	if ((managersToBuy * pricePerManager) > money) {
 		alertify.message("Sorry, but you don't have enough coins to purchase this item. Please generate more coins and try again.");
 	}
-	if ((managersToBuy * pricePerManager <= money) {
+	if ((managersToBuy * pricePerManager) <= money) {
 		Managers = Managers + managersToBuy;
 		money = money - (managersToBuy * pricePerManager);
 		kits = kits - 5;
@@ -153,7 +153,7 @@ function refresh() {
 	psiPerSec.innerHTML = psipersec;
 	researchValue.innerHTML = Math.floor(researchpoints);
 	researchPerSec.innerHTML = researchpersec;
-	coinspersec = salesperson + (Managers * ManagerMultiplier) * salespersonMultiplier;
+	coinspersec = (salesperson * salespersonMultiplier) + (Managers * ManagerMultiplier);
 	coinsValue.innerHTML = Math.floor(money);
 	coinsPerSec.innerHTML = coinspersec;
 	updateSaveFile()
