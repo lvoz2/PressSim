@@ -182,8 +182,8 @@ function updateSaveFile() {
 	savetoLS('psipersec', psipersec);
 	savetoLS('handMultiplier', handMultiplier);
 	savetoLS('kits', kits);
-	savetoLS('Akits, Akits); 
-	savetoLS('Managers, Managers); 
+	savetoLS('Akits', Akits); 
+	savetoLS('Managers', Managers); 
 	savetoLS('kitMultiplier', kitMultiplier);
 	savetoLS('researchpointcost', researchpointcost);
 	savetoLS('researchpoints', researchpoints);
