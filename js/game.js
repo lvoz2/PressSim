@@ -2,6 +2,7 @@ function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
 	variables()
 	setInterval(update, 10);
+	checkAlertify()
 	loadSave()
 }
 function loadSave() {
@@ -192,16 +193,18 @@ function updateSaveFile() {
 	savetoLS('salespersonMultiplier', salespersonMultiplier);
 	savetoLS('save', 2);
 }
-load()
-if(!alertify.errorAlert){
-  //define a new errorAlert base on alert
-  alertify.dialog('errorAlert',function factory(){
-    return{
-            build:function(){
-                var errorHeader = '<h2>PressSim</h2>';
-                this.setHeader(errorHeader);
-            }
-        }; 
-    },true,'alert');
+function checkAlertify() {
+	if(!alertify.errorAlert){
+	  //define a new errorAlert base on alert
+	  alertify.dialog('errorAlert',function factory(){
+	    return{
+		    build:function(){
+			var errorHeader = '<h2>PressSim</h2>';
+			this.setHeader(errorHeader);
+		    }
+		}; 
+	    },true,'alert');
+	}
 }
+load()
 
