@@ -7,10 +7,10 @@
       "sizes": "200x200"
     }
   ],
-  "start_url": "/",
+  "start_url": "/PressSim/",
   "background_color": "#111111",
   "display": "fullscreen",
-  "scope": "https://lvoz2.github.io/PressSim/",
+  "scope": "https://lvoz2.github.io/",
   "theme_color": "#FFFFFF",
   "description": "This is a game that tries to simulate the processes that change materials into other forms, like carbon to diamonds, by the means of upgrading the technology that applies artificial pressure and upgrading the materials used, which will increase the threshold of pressure available."
 }
