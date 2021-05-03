@@ -1,16 +1,3 @@
-function createscript1() {
-	var script1 = document.createElement('script')
-	script1.src = './alertifyjs/alertify.min.js'
-	document.head.append(script1)
-	setTimeout(createscript2, 100)
-}
-function createscript2() {
-	var script2 = document.createElement('script')
-	script2.src = './js/game.js'
-	document.head.append(script2)
-}
-createscript1()
-
 var CACHE_NAME = 'PressSim';
 var urlsToCache = [
   'https://lvoz2.github.io/PressSim/index.html'
