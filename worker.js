@@ -6,14 +6,8 @@ function createscript1() {
 }
 function createscript2() {
 	var script2 = document.createElement('script')
-	script2.src = './js/variables.js'
+	script2.src = './js/game.js'
 	document.head.append(script2)
-	setTimeout(createscript3, 100)
-}
-function createscript3() {
-	var script3 = document.createElement('script')
-	script3.src = './js/game.js'
-	document.head.append(script3)
 }
 createscript1()
 
