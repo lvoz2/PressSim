@@ -8,7 +8,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "https://lvoz2.github.io/PressSim/index.html",
   "background_color": "#111111",
   "display": "fullscreen",
   "scope": "https://lvoz2.github.io/PressSim/",
