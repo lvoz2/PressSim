@@ -1,6 +1,6 @@
-var CACHE_NAME = 'example';
+var CACHE_NAME = 'PressSim';
 var urlsToCache = [
-  '/'
+  'https://lvoz2.github.io/PressSim/index.html'
 ];
 
 self.addEventListener('install', function(event) {
