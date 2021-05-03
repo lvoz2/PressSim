@@ -1,10 +1,10 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
 	variables()
-	window.worker = new Worker("./js/worker.js");
+	window.worker = new Worker("./worker.js");
 	if ("serviceWorker" in navigator) {
 		navigator.serviceWorker
-		.register("https://lvoz2.github.io/PressSim/js/worker.js")
+		.register("https://lvoz2.github.io/PressSim/worker.js")
 		.then(serviceWorker => {
 			console.log("Service Worker registered: ", serviceWorker);
 		})
