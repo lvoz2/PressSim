@@ -81,6 +81,10 @@ function loadSave() {
 	if (save != 2) {
 	}
 	refresh()
+	stopLoad()
+}
+function stopLoad() {
+	document.getElementById("load").innerHTML = '';
 }
 function gainPsi(psiToIncreaseBy) {
 	psi = psi + psiToIncreaseBy;
