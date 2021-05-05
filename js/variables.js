@@ -25,6 +25,7 @@ function variables() {
 	window.salesperson = 0;
 	window.salespersonMultiplier = 1;
 	window.save = 0;
+	window.currentUnit = 'Metric';
 
 	//Element Variables
 	window.psiValue = document.getElementById("psiValue");
@@ -33,4 +34,5 @@ function variables() {
 	window.researchPerSec = document.getElementById("researchPerSec");
 	window.coinsValue = document.getElementById("coinsValue"); 
 	window.coinsPerSec = document.getElementById("coinsPerSec");
+	window.unitDropdown = document.getElementById("unit");
 }
