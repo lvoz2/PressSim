@@ -126,3 +126,6 @@ button {
 	display: inline-block;
 	float: right;
 }
+#load {
+	margin: auto;
+}
