@@ -1,7 +1,7 @@
 font-face {
     font-family: 'arvo';
     src: url('./fonts/Arvo/bold/bold.woff2') format('woff2'),
-         url('./fonts/Arvo/bold/bold.woff') format('woff');
+         url('./fonts/Arvo/bold/bold.woff') format('woff'),
          url('./fonts/Arvo/bold/bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
@@ -9,7 +9,7 @@ font-face {
 font-face {
     font-family: 'arvo';
     src: url('./fonts/Arvo/bolditalic/bolditalic.woff2') format('woff2'),
-         url('./fonts/Arvo/bolditalic/bolditalic.woff') format('woff');
+         url('./fonts/Arvo/bolditalic/bolditalic.woff') format('woff'),
          url('./fonts/Arvo/bolditalic/bolditalic.ttf') format('ttf');
     font-weight: bold;
     font-style: italic;
@@ -17,7 +17,7 @@ font-face {
 font-face {
     font-family: 'arvo';
     src: url('./fonts/Arvo/italic/italic.woff2') format('woff2'),
-         url('./fonts/Arvo/italic/italic.woff') format('woff');
+         url('./fonts/Arvo/italic/italic.woff') format('woff'),
          url('./fonts/Arvo/italic/italic.ttf') format('ttf');
     font-weight: italic;
     font-style: normal;
@@ -28,7 +28,7 @@ font-face {
 font-face {
     font-family: 'arvo';
     src: url('./fonts/Arvo/regular/regular.woff2') format('woff2'),
-         url('./fonts/Arvo/regular/regular.woff') format('woff');
+         url('./fonts/Arvo/regular/regular.woff') format('woff'),
          url('./fonts/Arvo/regular/regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
