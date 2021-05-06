@@ -90,7 +90,7 @@ function changeUnit() {
 	for (var i = 0; i < unitGroup.length; i++) {
 		if (unit === "psi") {
 			unitGroup[i].innerText = "kPa";
-			unitValueGroup[i].innerText = psi * 6.89475729;
+			unitValueGroup[i].innerText = parseInt(unitValueGroup[i].innerText) * 6.89475729;
 		}
 		if (unit === "kPa") {
 			unitGroup[i].innerText = "psi";
