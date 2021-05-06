@@ -1,5 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
+	window.kpafactor;
 	variables()
 	window.worker = new Worker("./worker.js");
 	if ("serviceWorker" in navigator) {
@@ -86,7 +87,6 @@ function loadSave() {
 function changeUnit() {
 	window.unitGroup = document.getElementsByClassName("unit");
 	window.unitValueGroup = document.getElementsByClassName("unitValue");
-	window.kpafactor;
 	window.unit = unitGroup[0].innerText;
 	for (var i = 0; i < unitGroup.length; i++) {
 		if (unit === "psi") {
