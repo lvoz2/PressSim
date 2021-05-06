@@ -191,7 +191,7 @@ function refresh() {
 	psipersec = hands * handMultiplier;
 	researchpersec = kits + (Akits * AkitMultiplier) * kitMultiplier;
 	psiValue.innerHTML = Math.floor(psi * kpafactor);
-	psiPerSec.innerHTML = psipersec;
+	psiPerSec.innerHTML = psipersec * kpafactor;
 	researchValue.innerHTML = Math.floor(researchpoints);
 	researchPerSec.innerHTML = researchpersec;
 	coinspersec = (salesperson * salespersonMultiplier) + (Managers * ManagerMultiplier);
