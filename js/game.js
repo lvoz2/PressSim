@@ -83,6 +83,21 @@ function loadSave() {
 	refresh()
 	stopLoad()
 }
+function changeUnit() {
+	window.unitGroup = document.getElementsByClassName("unit");
+	window.unitValueGroup = document.getElementsByClassName("unitValue");
+	window.unit = unitGroup[0].innerText;
+	for (var i = 0; i < unitGroup.length; i++) {
+		if (unit === "psi") {
+			unitGroup[i].innerText = "kPa";
+			unitValueGroup[i].innerText = psi * 6.89475729;
+		}
+		if (unit === "kPa") {
+			unitGroup[i].innerText = "psi";
+			unitValueGroup[i].innerText = psi;
+		}
+	}
+}
 function stopLoad() {
 	document.getElementById("load").innerHTML = '';
 }
