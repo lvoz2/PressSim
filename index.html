@@ -29,22 +29,22 @@
 			<div class="main">
 				<div id="pressure_creation" class="tab">
 					<div class="psicontrols">
-						<p style="font-size:25px; font-weight:bold;" class="psicontrolsdetails"><span id="psiValue"></span>&nbsp;psi</p>
-						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="psicontrolsdetails"><span id="psiPerSec"></span>&nbsp;psi/sec</p>
-						<button id="gainOnePsi" onclick="gainPsi(1)" class="button psicontrolsdetails">Gain one psi.</button>
+						<p style="font-size:25px; font-weight:bold;" class="psicontrolsdetails"><span id="psiValue" class="unitValue"></span>&nbsp;<span class="unit">psi</span></p>
+						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="psicontrolsdetails"><span id="psiPerSec"></span>&nbsp;<span class="unit">psi</span>/sec</p>
+						<button id="gainOnePsi" onclick="gainPsi(1)" class="button psicontrolsdetails">Gain one <span class="unit">psi</span>.</button>
 					</div>
 					<div>
 						<div class="handscontrols">
 							<h3>Hands</h3>
 							<p>Amount: <div id="handAmount"></div>
-							<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 psi/sec</p> 
+							<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +1 <span class="unit">psi</span>/sec</p> 
 							<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: <span id="handSingleCost">4</span> coins</button>
 						</div>
 						<br/>
 						<div class="presscontrols">
 							<h3>Industrial Press</h3>
 							<p>Amount</p>
-							<p>Industrial Presses are things that can automatically apply pressure to an item using hydraulics. +10 psi/sec</p>
+							<p>Industrial Presses are things that can automatically apply pressure to an item using hydraulics. +10 <span class="unit">psi</span>/sec</p>
 							<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: <span id="pressSingleCost">10</span> coins</button>
 						</div>
 					</div>
@@ -53,21 +53,21 @@
 					<div class="researchcontrols">
 						<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
-						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: 10 psi.</button>
+						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: 10 <span class="unit">psi</span>.</button>
 					</div>
 					<div class="left-column">
 						<div class="kitcontrols">
 							<h3>Chemistry Kits</h3>
 							<p>Amount: <div id="kitsAmount"></div>
 							<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
-							<button class="button button1" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, 10 psi/sec</span></button>
+							<button class="button button1" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, 10 <span class="unit">psi</span>/sec</span></button>
 						</div>
 						<br/>
 						<div class="akitcontrols">
 							<h3>Advanced Chemistry Kits</h3>
 							<p>Amount: <div id ="akitsAmount"></div>
 							<p>Advanced Chemistry Kits are used to learn more about science exploring into science deeper. +10 reasearch points/sec</p>
-							<button class="button button1" id="AdvancedKitBuy" onclick="buyAKits(1)">Buy one Advanced Chemistry Kits. Cost: <span id="AdvancedKitsSingleCost">10 coins, 20 psi/se</span></button>
+							<button class="button button1" id="AdvancedKitBuy" onclick="buyAKits(1)">Buy one Advanced Chemistry Kits. Cost: <span id="AdvancedKitsSingleCost">10</span> coins, 20 <span class="unit">psi</span>/sec</button>
 						</div>
 					</div>
 					<div class="right-column">
