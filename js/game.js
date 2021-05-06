@@ -97,7 +97,7 @@ function changeUnit() {
 		if (unit === "kPa") {
 			unitGroup[i].innerText = "psi";
 			kpafactor = 1;
-			unitValueGroup[i].innerText = Math.ceil(parseInt(unitValueGroup[i].innerText) / 6.89475729);
+			unitValueGroup[i].innerText = Math.floor(parseInt(unitValueGroup[i].innerText) / 6.89475729);
 		}
 	}
 }
