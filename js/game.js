@@ -86,14 +86,17 @@ function loadSave() {
 function changeUnit() {
 	window.unitGroup = document.getElementsByClassName("unit");
 	window.unitValueGroup = document.getElementsByClassName("unitValue");
+	window.kpafactor;
 	window.unit = unitGroup[0].innerText;
 	for (var i = 0; i < unitGroup.length; i++) {
 		if (unit === "psi") {
 			unitGroup[i].innerText = "kPa";
+			kpafactor = 6.89475729;
 			unitValueGroup[i].innerText = parseInt(unitValueGroup[i].innerText) * 6.89475729;
 		}
 		if (unit === "kPa") {
 			unitGroup[i].innerText = "psi";
+			kpafactor = 1;
 			unitValueGroup[i].innerText = psi;
 		}
 	}
@@ -187,7 +190,7 @@ function purgeSave() {
 function refresh() {
 	psipersec = hands * handMultiplier;
 	researchpersec = kits + (Akits * AkitMultiplier) * kitMultiplier;
-	psiValue.innerHTML = Math.floor(psi);
+	psiValue.innerHTML = Math.floor(psi * kpafactor);
 	psiPerSec.innerHTML = psipersec;
 	researchValue.innerHTML = Math.floor(researchpoints);
 	researchPerSec.innerHTML = researchpersec;
