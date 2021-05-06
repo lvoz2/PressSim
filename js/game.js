@@ -1,6 +1,6 @@
 function load() {
 	location.replace("https://lvoz2.github.io/PressSim/#pressure_creation")
-	window.kpafactor;
+	window.kpafactor = 1;
 	variables()
 	window.worker = new Worker("./worker.js");
 	if ("serviceWorker" in navigator) {
