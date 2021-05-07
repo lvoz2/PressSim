@@ -63,7 +63,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 self.addEventListener('activate', function(event) {
-  var cacheWhitelist = ['example'];
+  var cacheWhitelist = ['PressSim'];
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
