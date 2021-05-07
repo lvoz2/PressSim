@@ -18,7 +18,7 @@ function createscript3() {
 }
 function createscript4() {
 	var script4 = document.createElement('script')
-	script4.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+	script4.src = './jquery-3.6.0.min.js'
 	document.head.append(script4)
 }
 createscript1()
