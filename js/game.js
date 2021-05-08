@@ -84,6 +84,13 @@ function loadSave() {
 	refresh()
 	stopLoad()
 }
+function changeScreen(changeTo) {
+	window.tabs = document.getElementsByClassName("tab");
+	for (var i = 0; i < tabs.length; i++) {
+		tabs[i].attributes[1].value = "tab hidden";
+	}
+	document.getElementById(changeTo).attributes[1].value = "tab visible";
+}
 function changeUnit() {
 	window.unitGroup = document.getElementsByClassName("unit");
 	window.unitValueGroup = document.getElementsByClassName("unitValue");
