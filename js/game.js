@@ -1,4 +1,5 @@
 function load() {
+	changeScreen("pressure_creation")
 	window.kpafactor = 1;
 	variables()
 	window.worker = new Worker("./worker.js");
