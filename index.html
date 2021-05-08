@@ -22,17 +22,17 @@
 			</div>
 			<div>
 				<ul class="nav-ul">
-					<li class="nav-li"><a class="nav-li-a" href=".#pressure_creation">Pressure Creation</a></li>
-					<li class="nav-li"><a class="nav-li-a" href=".#research">Research</a></li>
-					<li class="nav-li"><a class="nav-li-a" href=".#market">Market</a></li>
-					<li class="nav-li"><a class="nav-li-a" href=".#item_upgrades">Item Upgrades</a></li>
-					<li class="nav-li"><a class="nav-li-a" href=".#table_upgrades">Table Upgrades</a></li>
-					<li class="nav-li" style="float: right;"><a class="nav-li-a" href=".#settings">Settings</a></li>
-					<li class="nav-li" style="float: right;"><a class="nav-li-a" href=".#achievments">Achievements</a></li>
+					<li class="nav-li"><a class="nav-li-a" onclick='changeScreen("pressure_creation")'>Pressure Creation</a></li>
+					<li class="nav-li"><a class="nav-li-a" onclick='changeScreen("research")'>Research</a></li>
+					<li class="nav-li"><a class="nav-li-a" onclick='changeScreen("#market")'>Market</a></li>
+					<li class="nav-li"><a class="nav-li-a" onclick='changeScreen("item_upgrades")'>Item Upgrades</a></li>
+					<li class="nav-li"><a class="nav-li-a" onclick='changeScreen("table_upgrades")'>Table Upgrades</a></li>
+					<li class="nav-li" style="float: right;"><a class="nav-li-a" onclick='changeScreen("settings")'>Settings</a></li>
+					<li class="nav-li" style="float: right;"><a class="nav-li-a" onclick='changeScreen("achievments")'>Achievements</a></li>
 				</ul>
 			</div>
 			<div class="main">
-				<div id="pressure_creation" class="tab">
+				<div id="pressure_creation" class="tab hidden">
 					<div class="psicontrols">
 						<p style="font-size:25px; font-weight:bold;" class="psicontrolsdetails"><span id="psiValue" class="unitValue"></span>&nbsp;<span class="unit">psi</span></p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="psicontrolsdetails"><span id="psiPerSec" class="unitValue"></span>&nbsp;<span class="unit">psi</span>/sec</p>
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="research" class="tab">
+				<div id="research" class="tab hidden">
 					<div class="researchcontrols">
 						<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
@@ -78,7 +78,7 @@
 					<div class="right-column">
 					</div>
 				</div>
-				<div id="market" class="tab">
+				<div id="market" class="tab hidden">
 					<div class="marketcontrols">
 						<p style="font-size:25px; font-weight:bold;" class="marketcontrolsdetails"><span id="coinsValue"></span> coins</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="marketcontrolsdetails"><span id="coinsPerSec"></span> coins/sec</p>
@@ -98,7 +98,7 @@
 						<button class="button button1" id="BuyManager" onclick="buyManager(1)">Hire one Manager. Cost: <span id="ManagerSingleCost">20 coins, 5 reasearch point/sec</span></button>
 					</div>
 				</div>
-				<div id="item_upgrades" class="tab">
+				<div id="item_upgrades" class="tab hidden">
 					<h3>Sand</h3>
 					<p>Amount: <div id="Amount"></div></p>
 					<p>Sand is used to create glass</p>
@@ -115,10 +115,10 @@
 					<p>Metal will help create thing to create better tools for psi or coins or reaserch points</p>
 					<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">100 coins, create Metal/sec</span></button>
 				</div>
-				<div id="table_upgrades" class="tab">
+				<div id="table_upgrades" class="tab hidden">
 					<h3>Leave this for later</h3>
 				</div>
-				<div id="settings" class="tab">
+				<div id="settings" class="tab hidden">
 					<h1>Settings</h1><br/>
 					<p>Unit:
 					<select name="unit" id="unit" onchange="changeUnit()">
@@ -127,7 +127,7 @@
   					</select>
 					</p>
 				</div>
-				<div id="achievments" class="tab">
+				<div id="achievments" class="tab hidden">
 				</div>
 			</div>
 			<div id="js_css">
