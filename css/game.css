@@ -75,12 +75,12 @@
 .marketcontrolsdetails {
 	margin: 0;
 }
-.tab {
+.hidden {
 	visibility: hidden;
 	opacity: 0;
 	display: none;
 }
-.tab:target {
+.visible {
 	visibility: visible;
 	opacity: 1;
 	display: block;
