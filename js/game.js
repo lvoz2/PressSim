@@ -39,8 +39,8 @@ function loadSave() {
 		var salespersonfile = localStorage.getItem('salesperson'); 
 		var salespersonMultiplierfile = localStorage.getItem('salespersonMultiplier');
 		var kitsfile = localStorage.getItem('kits');
-		var Akitsfile = localStorage.getItem('Akits');
-		var Managersfile = localStorage.getItem('Managers');
+		var akitsfile = localStorage.getItem('Akits');
+		var managersfile = localStorage.getItem('Managers');
 		var kitsMultiplierfile = localStorage.getItem('kitsMultiplier');
 		pricePerHandfile = atob(pricePerHandfile); 
 		pricePerSalespersonfile = atob(pricePerSalespersonfile);
@@ -59,8 +59,8 @@ function loadSave() {
 		salespersonfile = atob(salespersonfile); 
 		salespersonMultiplierfile = atob(salespersonMultiplierfile);
 		kitsfile = atob(kitsfile);
-		Akitsfile = atob(Akitsfile);
-		Managersfile = atob(Managersfile);
+		akitsfile = atob(akitsfile);
+		managersfile = atob(managersfile);
 		kitsMultiplierfile = atob(kitsMultiplierfile);
 		pricePerHand = parseInt(pricePerHandfile); 
 		priceKitHand = parseInt(pricePerKitfile); 
@@ -75,8 +75,8 @@ function loadSave() {
 		salesperson = parseInt(salespersonfile); 
 		salespersonMultiplier = parseInt(salespersonMultiplierfile);
 		kits = parseInt(kitsfile);
-		Akits = parseInt(Akitsfile);
-		Managers = parseInt(Managersfile);
+		Akits = parseInt(akitsfile);
+		Managers = parseInt(managersfile);
 		kitsMultiplier = parseInt(kitsMultiplierfile);
 	}
 	if (save != 2) {
