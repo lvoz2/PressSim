@@ -16,17 +16,7 @@
 	text-decoration: none;
 }
 
-#confirm {
-	display: none;
-	border: 1px solid #000;
-	box-sizing: border-box;
-	text-align: center;
-	margin: 70px auto;
-	padding: 20px;
-	border-radius: 5px;
-	width: 30%;
-	position: relative;
-}
+
 #confirm button {
 	display: inline-block;
 	text-align: center;
