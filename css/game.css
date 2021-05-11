@@ -16,6 +16,12 @@
 	text-decoration: none;
 }
 
+.nav-li-b {
+	display: block;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+}
 
 #confirm button {
 	display: inline-block;
