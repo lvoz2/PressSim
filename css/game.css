@@ -78,7 +78,6 @@
 button {
         border-radius: 10px;
 	border: none;
-	color: white;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -89,27 +88,28 @@ button {
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
-.button:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
 .handcontrols {
 }
+
 .presscontrols {
 	visibility: hidden;
 	opacity: 0;
 	display: none;
 }
+
 .left-column {
 	width: 50%;
 	display: inline-block;
-	border-right: 1px solid black;
 	float: left;
 }
+
 .right-column {
 	width: 50%;
 	display: inline-block;
 	float: right;
 }
+
 #load {
 	margin: auto;
 }
