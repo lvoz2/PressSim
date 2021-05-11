@@ -1,5 +1,5 @@
 .nav-ul {
-  background-color: #00eb00;
+  background-color: #00c400;
 }
 
 .nav-li-a {
@@ -7,7 +7,7 @@
 }
 
 .nav-li-a:hover {
-	background-color: #006200;
+	background-color: #004e00;
 }
 
 #confirm {
@@ -30,7 +30,7 @@
 
 button {
   color: white;
-  background-color: #00eb00;
+  background-color: #00c400;
 }
 
 .button:hover {
