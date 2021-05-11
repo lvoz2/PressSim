@@ -1,3 +1,10 @@
+* {
+	font-family: 'arvo';
+	color: white;
+        position: relative;
+        margin: 0;
+}
+
 body {
   background-color: #3b3b3b;
 }
@@ -24,12 +31,6 @@ body {
 
 .researchcontroldetails:hover {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-* {
-	font-family: 'arvo';
-        position: relative;
-        margin: 0;
 }
 
 button {
