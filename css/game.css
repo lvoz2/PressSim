@@ -3,7 +3,6 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
 }
 
 .nav-li {
@@ -12,14 +11,9 @@
 
 .nav-li-a {
 	display: block;
-	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-}
-
-.nav-li-a:hover {
-	background-color: #111;
 }
 
 #confirm {
@@ -29,7 +23,6 @@
 	text-align: center;
 	margin: 70px auto;
 	padding: 20px;
-	background: #fff;
 	border-radius: 5px;
 	width: 30%;
 	position: relative;
@@ -51,9 +44,7 @@
 .psicontrolsdetails {
 	margin: 0;
 }
-.psicontroldetails:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
 .researchcontrols {
 	display: block;
 	margin-left: auto;
@@ -63,9 +54,7 @@
 .researchcontrolsdetails {
 	margin: 0;
 }
-.researchcontroldetails:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
 .marketcontrols {
 	display: block;
 	margin-left: auto;
@@ -85,14 +74,9 @@
 	opacity: 1;
 	display: block;
 }
-* {
-	font-family: 'arvo';
-        position: relative;
-        margin: 0;
-}
+
 button {
         border-radius: 10px;
-	background-color: #696969;
 	border: none;
 	color: white;
 	padding: 15px 32px;
