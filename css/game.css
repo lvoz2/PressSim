@@ -8,6 +8,7 @@
 
 .nav-li {
 	float: left;
+	height: 50px;
 }
 
 .nav-li-a {
@@ -15,6 +16,7 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	height: 50px;
 }
 
 .nav-li-b {
@@ -22,6 +24,7 @@
 	text-align: center;
 	padding: 5px 5px;
 	text-decoration: none;
+	height: 50px;
 }
 
 #center {
