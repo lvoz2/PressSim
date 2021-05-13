@@ -1,0 +1,42 @@
+.nav-ul {
+  background-color: #00c400;
+}
+
+.nav-li-a {
+  color: white;
+}
+
+.nav-li-a:hover {
+	background-color: #004e00;
+}
+
+#confirm {
+  background: #fff;
+}
+
+.psicontroldetails:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.researchcontroldetails:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+* {
+	font-family: 'arvo';
+        position: relative;
+        margin: 0;
+}
+
+button {
+  color: white;
+  background-color: #00c400;
+}
+
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left-column {
+  border-right: 1px solid black;
+}
