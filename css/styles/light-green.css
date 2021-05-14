@@ -22,12 +22,6 @@
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-* {
-	font-family: 'arvo';
-        position: relative;
-        margin: 0;
-}
-
 button {
   color: white;
   background-color: #00c400;
