@@ -3,3 +3,31 @@
         position: relative;
         margin: 0;
 }
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bold/bold.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bold/bold.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bold/bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'arvobolditalic';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bolditalic/bolditalic.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bolditalic/bolditalic.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/bolditalic/bolditalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'arvoitalic';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/italic/italic.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/italic/italic.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/italic/italic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'arvo';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/regular/regular.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/regular/regular.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Arvo/regular/regular.ttf') format('ttf');
+}
