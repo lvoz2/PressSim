@@ -27,9 +27,9 @@
 
 @font-face {
     font-family: 'quicksand';
-    src: url('/regular/regular.woff2') format('woff2'),
-         url('/regular/regular.woff') format('woff'),
-	 url('/regular/regular.eot') format('eot'),
-	 url('/regular/regular.woff') format('ttf'),
-         url('/regular/regular.otf') format('otf');
+    src: url('/fonts/Quicksand/regular/regular.woff2') format('woff2'),
+         url('/fonts/Quicksand/regular/regular.woff') format('woff'),
+	 url('/fonts/Quicksand/regular/regular.eot') format('eot'),
+	 url('/fonts/Quicksand/regular/regular.woff') format('ttf'),
+         url('/fonts/Quicksand/regular/regular.otf') format('otf');
 }
