@@ -1,3 +1,9 @@
+* {
+	font-family: 'quicksand';
+        position: relative;
+        margin: 0;
+}
+
 @font-face {
     font-family: 'quicksandbold';
     src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Quicksand/bold/bold.woff2') format('woff2'),
