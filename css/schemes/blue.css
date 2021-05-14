@@ -1,0 +1,27 @@
+.nav-ul {
+  background-color: #0058F0;
+}
+
+.nav-li-a:hover {
+	background-color: #002C78;
+}
+
+.psicontroldetails:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.researchcontroldetails:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button {
+  background-color: #0058F0;
+}
+
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left-column {
+  border-right: 1px solid black;
+}

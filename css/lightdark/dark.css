@@ -1,0 +1,28 @@
+body {
+  background-color: #212121;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.nav-li-a {
+  color: white;
+}
+
+
+#confirm {
+  background: #fff;
+}
+
+button {
+	color: white;
+}
