@@ -120,8 +120,36 @@
 						<option value="imperial">Imperial</option>
 						<option value="metric">Metric</option>
   					</select>
+					</p>
 					</br>
-					<button onclick="swapStyleSheetscheme('./css/schemes/blue.css')">Blue</button>
+					<p>Customization:
+					<table style="width:100%">
+					<tr>
+						<td><b>Colour Scheme</b></td>
+						<td><button onclick="swapStyleSheetscheme('./css/schemes/gray.css')">Gray</button></td>
+						<td><button onclick="swapStyleSheetscheme('./css/schemes/red.css')">Red</button></td>
+						<td><button onclick="swapStyleSheetscheme('./css/schemes/green.css')">Green</button></td>
+						<td><button onclick="swapStyleSheetscheme('./css/schemes/blue.css')">Blue</button></td>
+					</tr>
+					</table>
+					</p>
+					</br>
+					<p>
+					<table style="width:100%">
+					<tr>
+						<td><b>Light and Dark Mode</b></td>
+						<td><button onclick="swapStyleSheetlightdark('./css/lightdark/light.css')">Light Mode</button></td>
+						<td><button onclick="swapStyleSheetlightdark('./css/lightdark/dark.css')">Dark Mode</button></td>
+					</tr>
+					</p>
+					</br>
+					<p>
+					<table style="width:100%">
+					<tr>
+						<td><b>Font</b></td>
+						<td><button onclick="swapStyleSheetfont('./css/fonts/quicksand.css')">Quicksand</button></td>
+						<td><button onclick="swapStyleSheetfont('./css/fonts/arvo.css')">Arvo</button></td>
+					</tr>
 					</p>
 				</div>
 				<div id="achievements" class="tab hidden">
