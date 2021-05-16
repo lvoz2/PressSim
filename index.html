@@ -123,15 +123,17 @@
 					</p>
 					</br>
 					<p>Customization:
-					<table style="width:100%">
-					<tr>
-						<td><p><b>Colour Scheme</b></p></td>
-						<td><button onclick="swapStyleSheetscheme('./css/schemes/gray.css')">Gray</button></td>
-						<td><button onclick="swapStyleSheetscheme('./css/schemes/red.css')">Red</button></td>
-						<td><button onclick="swapStyleSheetscheme('./css/schemes/green.css')">Green</button></td>
-						<td><button onclick="swapStyleSheetscheme('./css/schemes/blue.css')">Blue</button></td>
-					</tr>
-					</table>
+						<p><b>Colour Scheme</b></p>
+						<select name="scheme" id="scheme" onchange="changeScheme()">
+							<option value="gray">Gray</option>
+							<option value="red">Red</option>
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+						</select>
+						<button onclick="swapStyleSheetscheme('./css/schemes/gray.css')">Gray</button>
+						<button onclick="swapStyleSheetscheme('./css/schemes/red.css')">Red</button>
+						<button onclick="swapStyleSheetscheme('./css/schemes/green.css')">Green</button>
+						<button onclick="swapStyleSheetscheme('./css/schemes/blue.css')">Blue</button>
 					</p>
 					</br>
 					<p>
