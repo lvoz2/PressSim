@@ -110,8 +110,17 @@ function changeUnit() {
 }
 function changeScheme() {
 	window.currentscheme = document.getElementById("scheme").options[document.getElementById("scheme").selectedIndex].value;
-	if (currentscheme == "gray") {
+	if (currentscheme === "gray") {
 		swapStyleSheetscheme('./css/schemes/gray.css')
+	}
+	if (currentscheme === "red") {
+		swapStyleSheetscheme('./css/schemes/red.css')
+	}
+	if (currentscheme === "green") {
+		swapStyleSheetscheme('./css/schemes/green.css')
+	}
+	if (currentscheme === "blue") {
+		swapStyleSheetscheme('./css/schemes/blue.css')
 	}
 }
 function stopLoad() {
