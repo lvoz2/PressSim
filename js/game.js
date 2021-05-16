@@ -108,6 +108,12 @@ function changeUnit() {
 		}
 	}
 }
+function changeScheme() {
+	window.currentscheme = document.getElementById("scheme").options[document.getElementById("scheme").selectedIndex].value;
+	if (currentscheme == "gray") {
+		swapStyleSheetscheme('./css/schemes/gray.css')
+	}
+}
 function stopLoad() {
 	document.getElementById("load").innerHTML = '';
 }
