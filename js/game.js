@@ -129,19 +129,19 @@ function changeScheme() {
 function changeLightdark() {
 	window.currentscheme = document.getElementById("lightdark").options[document.getElementById("lightdark").selectedIndex].value;
 	if (currentscheme === "light") {
-		swapStyleSheetslightdark('./css/lightdark/light.css')
+		swapStyleSheetlightdark('./css/lightdark/light.css')
 	}
 	if (currentscheme === "dark") {
-		swapStyleSheetslightdark('./css/lightdark/dark.css')
+		swapStyleSheetlightdark('./css/lightdark/dark.css')
 	}
 }
 function changeFont() {
 	window.currentscheme = document.getElementById("font").options[document.getElementById("font").selectedIndex].value;
 	if (currentscheme === "quicksand") {
-		swapStyleSheetslightdark('./css/fonts/quicksand.css')
+		swapStyleSheetlightdark('./css/fonts/quicksand.css')
 	}
 	if (currentscheme === "arvo") {
-		swapStyleSheetslightdark('./css/fonts/arvo.css')
+		swapStyleSheetlightdark('./css/fonts/arvo.css')
 	}
 }
 function stopLoad() {
