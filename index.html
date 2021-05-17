@@ -115,15 +115,15 @@
 				</div>
 				<div id="settings" class="tab hidden">
 					<h1>Settings</h1><br/>
-					<p>Unit:</p>
+					<p>Unit:
 					<select name="unit" id="unit" onchange="changeUnit()">
 						<option value="imperial">Imperial</option>
 						<option value="metric">Metric</option>
   					</select>
+					</p>
 					</br>
-					<p>Customization:</p>
-                                        <br/>
-					<div>
+					<p>Customization:
+                                        </br>
 						<p><b>Colour Scheme</b></p>
 						<select name="scheme" id="scheme" onchange="changeScheme()">
 							<option value="gray">Gray</option>
@@ -135,19 +135,25 @@
 						<button onclick="swapStyleSheetscheme('./css/schemes/red.css')">Red</button>
 						<button onclick="swapStyleSheetscheme('./css/schemes/green.css')">Green</button>
 						<button onclick="swapStyleSheetscheme('./css/schemes/blue.css')">Blue</button>
-					</div>
-					<br/>
-					<div>
+					</p>
+					</br>
+					<p>
 						<p><b>Light and Dark Mode</b></p>
+						<select name="lightdark" id="lightdark" onchange="changeLightdark()">
+							<option value="light">Light</option>
+							<option value="dark">Dark</option>
 						<button onclick="swapStyleSheetlightdark('./css/lightdark/light.css')">Light Mode</button>
 						<button onclick="swapStyleSheetlightdark('./css/lightdark/dark.css')">Dark Mode</button>
-					</div>
-					<br/>
-					<div>
+					</p>
+					</br>
+					<p>
 						<p><b>Font</b></p>
+						<select name="font" id="font" onchange="changeFont()">
+							<option value="quicksand">Quicksand</option>
+							<option value="arvo">Arvo</option>
 						<button onclick="swapStyleSheetfont('./css/fonts/quicksand.css')">Quicksand</button>
 						<button onclick="swapStyleSheetfont('./css/fonts/arvo.css')">Arvo</button>
-					</div>
+					</p>
 				</div>
 				<div id="achievements" class="tab hidden">
 					<h3>Leave this for later</h3>
