@@ -138,10 +138,10 @@ function changeLightdark() {
 function changeFont() {
 	window.currentscheme = document.getElementById("font").options[document.getElementById("font").selectedIndex].value;
 	if (currentscheme === "quicksand") {
-		swapStyleSheetlightdark('./css/fonts/quicksand.css')
+		swapStyleSheetfont('./css/fonts/quicksand.css')
 	}
 	if (currentscheme === "arvo") {
-		swapStyleSheetlightdark('./css/fonts/arvo.css')
+		swapStyleSheetfont('./css/fonts/arvo.css')
 	}
 }
 function stopLoad() {
