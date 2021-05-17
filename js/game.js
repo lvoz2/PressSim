@@ -122,6 +122,9 @@ function changeScheme() {
 	if (currentscheme === "blue") {
 		swapStyleSheetscheme('./css/schemes/blue.css')
 	}
+	if (currentscheme === "orange") {
+		swapStyleSheetscheme('./css/schemes/orange.css')
+	}
 }
 function changeLightdark() {
 	window.currentscheme = document.getElementById("lightdark").options[document.getElementById("lightdark").selectedIndex].value;
