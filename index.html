@@ -115,7 +115,7 @@
 				</div>
 				<div id="settings" class="tab hidden">
 					<h1>Settings</h1><br/>
-					<p>Unit:
+					<p style="display: inline;">Unit:</p>
 					<select name="unit" id="unit" onchange="changeUnit()">
 						<option value="imperial">Imperial</option>
 						<option value="metric">Metric</option>
@@ -144,6 +144,7 @@
 						<select name="lightdark" id="lightdark" onchange="changeLightdark()">
 							<option value="light">Light</option>
 							<option value="dark">Dark</option>
+						</select>
 						<button onclick="swapStyleSheetlightdark('./css/lightdark/light.css')">Light Mode</button>
 						<button onclick="swapStyleSheetlightdark('./css/lightdark/dark.css')">Dark Mode</button>
 					</p>
@@ -153,6 +154,7 @@
 						<select name="font" id="font" onchange="changeFont()">
 							<option value="quicksand">Quicksand</option>
 							<option value="arvo">Arvo</option>
+						</select>
 						<button onclick="swapStyleSheetfont('./css/fonts/quicksand.css')">Quicksand</button>
 						<button onclick="swapStyleSheetfont('./css/fonts/arvo.css')">Arvo</button>
 					</p>
