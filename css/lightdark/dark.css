@@ -26,3 +26,7 @@ h3 {
 button {
 	color: white;
 }
+
+.left-column {
+  border-right: 1px solid #212121;
+}
