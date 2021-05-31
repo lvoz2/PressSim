@@ -233,11 +233,11 @@ function purgeSave() {
 function refresh() {
 	psipersec = hands * handMultiplier;
 	researchpersec = kits + (Akits * AkitMultiplier) * kitMultiplier;
-	psiValue.innerHTML = Math.floor(psi * kpafactor);
-	psiPerSec.innerHTML = Math.ceil(psipersec * kpafactor);
-	researchValue.innerHTML = Math.floor(researchpoints);
-	researchPerSec.innerHTML = researchpersec;
 	coinspersec = (salesperson * salespersonMultiplier) + (Managers * ManagerMultiplier);
+	psiValue.innerHTML = Math.floor(psi * kpafactor);
+	psiPerSec.innerHTML = Math.ceil((psipersec * kpafactor) - (researchpersec * 10));
+	researchValue.innerHTML = Math.floor(researchpoints);
+	researchPerSec.innerHTML = researchpersec - coinspersec;
 	coinsValue.innerHTML = Math.floor(money);
 	coinsPerSec.innerHTML = coinspersec;
 	updateSaveFile()
