@@ -1,10 +1,7 @@
 .scroll-up {
- height: 50px;	
+ height: 100%;	
  overflow: hidden;
  position: relative;
- background: yellow;
- color: orange;
- border: 1px solid orange;
 }
 
 .scroll-up p {
