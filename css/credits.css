@@ -1,7 +1,7 @@
 .scroll-up {
- height: 150px;	
+ # height: 150px;	
  overflow: hidden;
- position: relative;
+ # position: relative;
 }
 
 .scroll-up p {
