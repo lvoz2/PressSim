@@ -1,6 +1,6 @@
 function createscript1() {
 	var script1 = document.createElement('script')
-	script1.src = './alertifyjs/alertify.min.js'
+	script1.src = './external/alertifyjs/alertify.min.js'
 	script1.onload = function(){createscript2()}
 	document.head.append(script1)
 }
@@ -18,7 +18,7 @@ function createscript3() {
 }
 function createscript4() {
 	var script4 = document.createElement('script')
-	script4.src = './jquery-3.6.0.min.js'
+	script4.src = './external/jquery/jquery-3.6.0.min.js'
 	document.head.append(script4)
 }
 createscript1()
