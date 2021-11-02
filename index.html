@@ -125,17 +125,29 @@
 					<p>Amount: <div id="metalAmount"></div></p>
 					<p>Metal will help create thing to create better tools for psi or coins or research points</p>
 					<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">100 coins, create Metal/sec</span></button>
-				</div>
-				<div id="Reaserch_Tree" class="tab hidden">
-					<h3>Start working for reasearch things</h3>
-				</div>
-				<div id="World_Trade" class="tab hidden">
-					<div id="Sell Ores">
+					</div>
+				<div id="Reasearch Center" class="tab hidden">
+					<div class="researchcentercontrols">
+						<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
+						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
+						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: <span class="unitValue">10</span> <span class="unit">psi</span>.</button>
+					</div>
+				<div id="World Trade Center" class="tab hidden">
+					<div class="worldtradecentercontrols">
+						<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
+						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
+						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: <span class="unitValue">10</span> <span class="unit">psi</span>.</button>
+					</div>
 						<h1>Iron Ore</h1>
-						<br/>
 						<p>Amount: <span id="ironOreAmount"></span></p>
-						<p>You can sell or use the Iron Ore</p>
+						<p>You can sell or use the Iron Ore to create metal</p>
 						<h3>Gold Ore</h3>
+					</div>
+					<div id="Smeltery" class="tab hidden">
+					<div class="smelterycontrols">
+						<p style="font-size:25px; font-weight:bold;" class="researchcontrolsdetails"><span id="researchValue"></span> research points</p>
+						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="researchcontrolsdetails"><span id="researchPerSec"></span> research points/sec</p>
+						<button id="gainOneResearchPoint" onclick="gainResearch(1)" class="button researchcontrolsdetails">Gain one research point. Cost: <span class="unitValue">10</span> <span class="unit">psi</span>.</button>
 					</div>
 				</div>
 				<div id="settings" class="tab hidden">
