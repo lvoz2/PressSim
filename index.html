@@ -103,15 +103,21 @@
 					</div>
 				</div>
 				<div id="item_upgrades" class="tab hidden">
-					<h3>Sand</h3>
-					<p>Amount: <div id="Amount"></div></p>
-					<p>Sand is used to create glass</p>
-					<button class="button button1" id"Sandbuy" onclick="buySand(1)">Buy Sand. Cost: <span id="sandsinglecost">50 coins, create sandstone/sec</span></button>
+					<div id="sand">
+						<h3>Sand</h3>
+						<p>Amount: <div id="sandAmount"></div></p>
+						<p>Sand is used to create glass</p>
+						<button class="button button1" id"sandBuy" onclick="buySand(1)">Buy Sand. Cost: <span id="sandsinglecost">50 coins, create sandstone/sec</span></button>
+					</div>
 					<br/>
-					<h3>Sandstone</h3>
-					<p>Amount: <div id="Amount"></div></p>
-					<p>Sandstone will be used to sell on the global market so then you can use it to create more coins</p>
-					<button class="button button1" id"SandStoneBuy" onclick="BuySandstone(1)">Buy Sandstone. Cost: <span in"SandStoneSingleCost">75 coins, 10 sand/sec</span></button>
+					<div id="sandstone">
+						<h3>Sandstone</h3>
+						<p>Amount: <div id="Amount"></div></p>
+						<p>Sandstone will be used to sell on the global market so then you can use it to create more coins</p>
+						<button class="button button1" id"SandStoneBuy" onclick="BuySandstone(1)">Buy Sandstone. Cost: <span in"SandStoneSingleCost">75 coins, 10 sand/sec</span></button>
+					</div>
+					<br/>
+		
 					<h3>Iron Ore Generator</h3>
 					<p>Amount: <div id="ironAmount"></div></p>
 					<p>Iron Ore will generate so then you can create metal so you can create knew things</p>
@@ -121,13 +127,14 @@
 					<p>Amount: <div id="metalAmount"></div></p>
 					<p>Metal will help create thing to create better tools for psi or coins or research points</p>
 					<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">100 coins, create Metal/sec</span></button>
-					</div>
+				</div>
 				<div id="Reaserch_Tree" class="tab hidden">
 					<h3>Start working for reasearch things</h3>
-				<div id="World Trade" class="tab hidden">
-						<div id="Sell Ores" class="tab hidden">
+				</div>
+				<div id="World_Trade" class="tab hidden">
+					<div id="Sell Ores">
 						<h1>Iron Ore</h1><br/>
-						<pAmount: <div id="Amount"></div></p>
+						<pAmount: <div id="ironOreAmount"></div></p>
 						<pYou can sell or use the Iron Ore</p>
 						<h3>Gold Ore<h3>
 					</div>
