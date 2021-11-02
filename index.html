@@ -108,22 +108,6 @@
 						<button class="button button1" id="BuyManager" onclick="buyManager(1)">Hire one Manager. Cost: <span id="ManagerSingleCost">20 coins, 5 research point/sec</span></button>
 					</div>
 				</div>
-				<div id="item_upgrades" class="tab hidden">
-					<div id="sand">
-						<h3>Sand</h3>
-						<p>Amount: <div id="sandAmount"></div></p>
-						<p>Sand is used to create glass</p>
-						<button class="button button1" id"sandBuy" onclick="buySand(1)">Buy Sand. Cost: <span id="sandsinglecost">50 coins, create sandstone/sec</span></button>
-					</div>
-					<br/>
-					<div id="sandstone">
-						<h3>Sandstone</h3>
-						<p>Amount: <div id="Amount"></div></p>
-						<p>Sandstone will be used to sell on the global market so then you can use it to create more coins</p>
-						<button class="button button1" id"SandStoneBuy" onclick="BuySandstone(1)">Buy Sandstone. Cost: <span in"SandStoneSingleCost">75 coins, 10 sand/sec</span></button>
-					</div>
-					<br/>
-				</div>
 				<div id="researchtree" class="tab hidden">
 					<div class="reasearchtreecontrols">
 						<p style="font-size:25px; font-weight:bold;" class="reasearchtreecontrolsdetails"><span id="reasearchtreeValue"></span> research points</p>
@@ -136,10 +120,12 @@
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="worldtradecentercontrolsdetails"><span id="worldtradecenterPerSec"></span> research points/sec</p>
 						
 					</div>
-						<h1>Iron Ore</h1>
+					<div class="ironorecontrols">
+						<h3>Iron Ore</h3>
 						<p>Amount: <span id="ironOreAmount"></span></p>
-						<p>You can sell or use the Iron Ore to create metal</p>
+						<p>You can sell or use the Iron Ore</p>
 						<button class="button button1" id="SellIronOre" onclick="SellIronOre(1)">Hire one Manager. Cost: <span id="SellIronOreSingleCost">30 coins/sec</span></button>
+					</div>
 				</div>
 				<div id="Mining Stations" class="tab hidden">
 					<div class="miningstationcontrols">
@@ -147,26 +133,23 @@
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="miningstationcontrolsdetails"><span id="miningstationPerSec"></span> research points/sec</p>
 					</div>
 					<br/>
-					<h3>Mine Iron Ore</h3>
-					<p>Amount: <span id="iron ore amout"></span></p>
-					<p>mine iron ore to get mmetal and unlock new things</p>
-					<button class="button button1" id="BuyIronOreMinner" onclick="buyIronOreMinner(1)">Hire one Manager. Cost: <span id="MinnerSingleCost">20 coins/sec</span></button>
-				</div>
-				<div id="smeltery" class="tab hidden">
+					<div class="mineironorecontrols">
+						<h3>Mine Iron Ore</h3>
+						<p>Amount: <span id="iron ore amout"></span></p>
+						<p>mine iron ore to get mmetal and unlock new things</p>
+						<button class="button button1" id="BuyIronOreMinner" onclick="buyIronOreMinner(1)">Hire one Manager. Cost: <span id="MinnerSingleCost">20 coins/sec</span></button>
+					</div>
+					<div id="smeltery" class="tab hidden">
 					<div class="smelterycontrols">
 						<p style="font-size:25px; font-weight:bold;" class="smelterycontrolsdetails"><span id="smelteryValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="smelterycontrolsdetails"><span id="smelteryPerSec"></span> research points/sec</p>
 					</div>
 					<br/>
-					<h3>Iron Ore</h3>
-					<p>Amount: <div id="ironAmount"></div></p>
-					<p>Iron ore can be sold or smelted to create new things</p>
-					<button class="button button1" id"SmeltIronOre" onclick="SmeltIronOre(1)">Buy Iron Ore. Cost: <span in="IronOreSingleCost">40 coins,/sec</span></button>
-					<br/>
-					<h3>Metal</h3>
-					<p>Amount: <div id="metalAmount"></div></p>
-					<p>Metal will help create thing to create better tools for psi or coins or research points</p>
-					<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">50 coins, 1 Iron Ore/sec</span></button>
+					<div class="metalgeneration">
+						<h3>Metal</h3>
+						<p>Amount: <div id="metalAmount"></div></p>
+						<p>Metal will help create thing to create better tools for psi or coins or research points</p>
+						<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">50 coins, 1 Iron Ore/sec</span></button>
 				</div>
 				<div id="settings" class="tab hidden">
 					<h1>Settings</h1><br/>
