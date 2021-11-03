@@ -26,15 +26,15 @@ var urlsToCache = [
   'https://lvoz2.github.io/PressSim/fonts/Arvo/regular/regular.ttf',
   'https://lvoz2.github.io/PressSim/fonts/Arvo/regular/regular.woff',
   'https://lvoz2.github.io/PressSim/fonts/Arvo/regular/regular.woff2',
-  'https://lvoz2.github.io/PressSim/alertifyjs/alertify.min.js',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/alertify.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/alertify.rtl.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/bootstrap.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/bootstrap.rtl.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/default.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/default.rtl.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/semantic.min.css',
-  'https://lvoz2.github.io/PressSim/alertifyjs/css/themes/semantic.rtl.min.css'
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/alertify.min.js',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/alertify.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/alertify.rtl.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/bootstrap.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/bootstrap.rtl.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/default.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/default.rtl.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/semantic.min.css',
+  'https://lvoz2.github.io/PressSim/external/alertifyjs/css/themes/semantic.rtl.min.css'
 ];
 
 self.addEventListener('install', function(event) {
