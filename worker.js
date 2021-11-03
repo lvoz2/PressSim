@@ -2,7 +2,7 @@ var CACHE_NAME = 'PressSim';
 var urlsToCache = [
   'https://lvoz2.github.io/PressSim/favicon.ico',
   'https://lvoz2.github.io/PressSim/index.html',
-  'https://lvoz2.github.io/PressSim/jquery-3.6.0.min.js',
+  'https://lvoz2.github.io/PressSim/external/jquery/jquery-3.6.0.min.js',
   'https://lvoz2.github.io/PressSim/manifest.json',
   'https://lvoz2.github.io/PressSim/worker.js',
   'https://lvoz2.github.io/PressSim/PressSim.png',
@@ -12,7 +12,6 @@ var urlsToCache = [
   'https://lvoz2.github.io/PressSim/js/startup.js',
   'https://lvoz2.github.io/PressSim/js/variables.js',
   'https://lvoz2.github.io/PressSim/css/game.css',
-  'https://lvoz2.github.io/PressSim/css/navbar.png',
   'https://lvoz2.github.io/PressSim/css/fonts.css',
   'https://lvoz2.github.io/PressSim/fonts/Arvo/bold/bold.ttf',
   'https://lvoz2.github.io/PressSim/fonts/Arvo/bold/bold.woff',
