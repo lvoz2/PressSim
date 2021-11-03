@@ -5,7 +5,7 @@ function load() {
 	window.worker = new Worker("");
 	if ("serviceWorker" in navigator) {
 		navigator.serviceWorker
-		.register("../worker.js")
+		.register("./worker.js")
 		.then(serviceWorker => {
 			console.log("Service Worker registered: ", serviceWorker);
 		})
