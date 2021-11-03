@@ -43,7 +43,7 @@
 							<p>Hands are things that are used to pressurize things. These Hands are pushing down on an object to apply pressure to it. The more Hands, the more pressure that can be applied. +<span class="unitValue">1</span> <span class="unit">psi</span>/sec</p> 
 							<button class="button button1" id="hand Buy" onclick="buyHands(1)">Buy one Hand. Cost: <span id="handSingleCost">4</span> coins</button>
 						</div>
-						<br/>
+						</br>
 						<div class="presscontrols">
 							<h3>Industrial Press</h3>
 							<p>Amount</p>
@@ -70,21 +70,21 @@
 							<p>Chemistry kits are used learn about basic science. +1 research point/sec</p> 
 							<button class="button button1" id="kitBuy" onclick="buyKits(1)">Buy one Chemistry Kit. Cost: <span id="kitSingleCost">5 coins, <span class="unitValue">10</span> <span class="unit">psi</span>/sec</span></button>
 						</div>
-						<br/>
+						</br>
 						<div class="akitcontrols">
 							<h3>Advanced Chemistry Kits</h3>
 							<p>Amount: <div id ="akitsAmount"></div>
 							<p>Advanced Chemistry Kits are used to learn more about science exploring into science deeper. +10 research points/sec</p>
 							<button class="button button1" id="AdvancedKitBuy" onclick="buyAKits(1)">Buy one Advanced Chemistry Kits. Cost: <span id="AdvancedKitsSingleCost">10</span> coins, <span class="unitValue">20</span> <span class="unit">psi</span>/sec</button>
 						</div>
-						<br/>
+						</br>
 						<div class="presscontrols">
 							<h3>Industrial Press Blueprint</h3>
 							<p>Amount</p>
 							<p>Industrial Press Blueprints allows you to learn how to create the industrial press. +<span class="unitValue">10</span> <span class="unit">psi</span>/sec</p>
 							<button class="button button2" id="Industrial PressBuy" onclick="buy Industrial Press(1)">Buy one Industrial Press. Cost: <span id="pressSingleCost">10</span> coins</button>
 						</div>
-						<br/>
+						</br>
 					</div>
 				</div>
 				<div id="market" class="tab hidden">
@@ -93,14 +93,14 @@
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="marketcontrolsdetails"><span id="coinsPerSec"></span> coins/sec</p>
 						<button id="gainOneCoin" onclick="gainCoins(1)" class="button marketcontrolsdetails">Gain one coin. Cost: 1 research point.</button>
 					</div>
-					<br/>
+					</br>
 					<div class="salescontrols">
 						<h3>Salespersons</h3>
 						<p>Amount: <div id="salesAmount"></div></p>
 						<p>Salespersons are used to advertise your company. This will increase the amount of people who want the knowledge you gain from your experiments. +1 coins/sec.</p> 
 						<button class="button button1" id="salesBuy" onclick="buySales(1)">Hire one Salesperson. Cost: <span id="salesSingleCost">8 coins, 1 research point/sec</span></button>
 					</div>
-					<br/>
+					</br>
 					<div class="managercontrols">
 						<h3>Manager</h3>
 						<p>Amount: <div id="ManagerAmount"></div></p>
@@ -118,7 +118,6 @@
 					<div class="worldtradecentercontrols">
 						<p style="font-size:25px; font-weight:bold;" class="worldtradecentercontrolsdetails"><span id="worldtradecenterValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="worldtradecentercontrolsdetails"><span id="worldtradecenterPerSec"></span> research points/sec</p>
-						
 					</div>
 					<div class="ironorecontrols">
 						<h3>Iron Ore</h3>
@@ -132,27 +131,30 @@
 						<p style="font-size:25px; font-weight:bold;" class="miningstationcontrolsdetails"><span id="miningstationValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="miningstationcontrolsdetails"><span id="miningstationPerSec"></span> research points/sec</p>
 					</div>
-					<br/>
+					</br>
 					<div class="mineironorecontrols">
 						<h3>Mine Iron Ore</h3>
 						<p>Amount: <span id="iron ore amout"></span></p>
 						<p>mine iron ore to get mmetal and unlock new things</p>
 						<button class="button button1" id="BuyIronOreMinner" onclick="buyIronOreMinner(1)">Hire one Manager. Cost: <span id="MinnerSingleCost">20 coins/sec</span></button>
 					</div>
+				</div>
 				<div id="smeltery" class="tab hidden">
 					<div class="smelterycontrols">
 						<p style="font-size:25px; font-weight:bold;" class="smelterycontrolsdetails"><span id="smelteryValue"></span> research points</p>
 						<p style="font-size:20px; font-weight:bold; margin-bottom:5px;" class="smelterycontrolsdetails"><span id="smelteryPerSec"></span> research points/sec</p>
 					</div>
-					<br/>
+					</br>
 					<div class="metalgeneration">
 						<h3>Metal</h3>
 						<p>Amount: <div id="metalAmount"></div></p>
 						<p>Metal will help create thing to create better tools for psi or coins or research points</p>
 						<button class="button button1" id="MetalBuy" onclick="BuyMetal(1)">Buy Metal. Cost:<span in="MetalSingleCost">50 coins, 1 Iron Ore/sec</span></button>
+					</div>
 				</div>
 				<div id="settings" class="tab hidden">
-					<h1>Settings</h1><br/>
+					<h1>Settings</h1>
+					</br>
 					<p style="display: inline;">Unit:</p>
 					<select name="unit" id="unit" onchange="changeUnit()">
 						<option value="imperial">Imperial</option>
