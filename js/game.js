@@ -5,7 +5,7 @@ function load() {
 	window.worker = new Worker("");
 	if ("serviceWorker" in navigator) {
 		navigator.serviceWorker
-		.register("https://lvoz2.gihub.io/PressSim/worker.js")
+		.register("https://lvoz2.github.io/PressSim/worker.js")
 		.then(serviceWorker => {
 			console.log("Service Worker registered: ", serviceWorker);
 		})
