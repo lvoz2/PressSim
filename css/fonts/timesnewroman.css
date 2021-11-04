@@ -1,0 +1,33 @@
+* {
+	font-family: 'Times-New-Roman';
+        position: relative;
+        margin: 0;
+}
+
+@font-face {
+    font-family: 'timesnewromanbold';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bold/bold.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bold/bold.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bold/bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'timesnewromanbolditalic';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bolditalic/bolditalic.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bolditalic/bolditalic.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/bolditalic/bolditalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'timesnewromanitalic';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/italic/italic.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/italic/italic.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/italic/italic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'timesnewroman';
+    src: url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/regular/regular.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/regular/regular.woff') format('woff'),
+         url('https://raw.githubusercontent.com/lvoz2/PressSim/main/fonts/Times-New-Roman/regular/regular.ttf') format('ttf');
+}
