@@ -143,6 +143,9 @@ function changeFont() {
 	if (currentscheme === "arvo") {
 		swapStyleSheetfont('./css/fonts/arvo.css')
 	}
+	if (currentscheme === "timesnewroman") {
+		swapStyleSheetfont('./css/fonts/timesnewroman.css')
+	}
 }
 function stopLoad() {
 	document.getElementById("load").innerHTML = '';
