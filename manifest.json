@@ -2,7 +2,7 @@
   "name": "PressSim",
   "icons": [
     {
-      "src": "https://lvoz2.github.io/PressSim/PressSim_x512.png",
+      "src": "https://lvoz2.github.io/PressSim/logos/old/PressSim_x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
