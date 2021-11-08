@@ -4,16 +4,20 @@
 	margin-right: auto;
 }
 .sidenav {
-	width: 130px;
+	width: 15%;
 	position: fixed;
 	z-index: 1;
-	top: 20px;
-	left: 10px;
+	top: 2%;
+	left: 1%;
 	background: #eee;
 	overflow-x: hidden;
 	padding: 8px 0;
 }
-
+.main {
+	margin-left: 16%; /* Same width as the sidebar + left position in px */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
 .sidenav a {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
